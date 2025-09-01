@@ -16,6 +16,7 @@ import java.util.Set;
 import java.util.concurrent.Callable;
 
 import extracting.PartialLandmarkGenerator;
+import file_managers.FileManager;
 import javaff.JavaFF;
 import javaff.data.Action;
 import javaff.data.Fact;
@@ -45,23 +46,74 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 	
 	protected List<Integer> observationsIndexObservabilityLevel = new ArrayList<>();
 	
+	protected FileManager fileManager;
+	
 	public abstract GoalRecognitionResult recognizeOnline() throws UnreachableGoalException, IOException, InterruptedException;
 	
 	public abstract GoalRecognitionResult recognizeOffline() throws UnreachableGoalException, IOException, InterruptedException;
 	
+	public void SetFileManager(FileManager manager) {
+		this.fileManager = manager;
+	}
+	
+	private void dir(String fileName) {
+		final File folder = new File(fileName);
+		for (final File fileEntry : folder.listFiles()) {
+            System.out.println(fileEntry.getName());
+		}
+	}
+	
+	private void DeleteAllFiles() {
+		String [] filesToDelete = new String[7];
+		filesToDelete[0] = "domain.pddl";
+		filesToDelete[1] = "template.pddl";
+		filesToDelete[2] = "templateInitial.pddl";
+		filesToDelete[3] = "obs.dat";
+		filesToDelete[4] = "hyps.dat";
+		filesToDelete[5] = "plan.png";
+		filesToDelete[6] = "real_hyp.dat";
+
+		for (int i = 0; i < filesToDelete.length; i++) {
+			File myObj = new File(filesToDelete[i]); 
+		    if (myObj.delete()) { 
+		      System.out.println("Deleted the file: " + myObj.getName());
+		    } else {
+		      System.out.println("Failed to delete the file."+ myObj.getName());
+		    }
+		}	
+	}
+	
+	public GoalRecognition(String fileName, FileManager manager){
+		this(fileName);
+		this.fileManager = manager;
+	}
+	
+	
 	public GoalRecognition(String fileName){
 		try{
+			this.fileManager = null;
+			this.dir("dataset\\blocks-world\\yifat_experiments");
 			this.recognitionFileName = fileName;
+			System.out.println(fileName);
 			if(!Files.isReadable(Paths.get(fileName)))
 				throw new IOException(fileName + " not found.");
 
-			String cmdRemovingFiles = "rm -rf domain.pddl template.pddl templateInitial.pddl obs.dat hyps.dat plan.png real_hyp.dat";
-			System.out.println(cmdRemovingFiles);
-			Process p = Runtime.getRuntime().exec(cmdRemovingFiles);
+			
+			this.DeleteAllFiles();
+			Process p; 
+			
+			//String cmdRemovingFiles = "rm -rf domain.pddl template.pddl templateInitial.pddl obs.dat hyps.dat plan.png real_hyp.dat";
+			//System.out.println(cmdRemovingFiles);
+			//p = Runtime.getRuntime().exec(cmdRemovingFiles);
+			//p.waitFor();
+			//System.out.println("tar -jxvf " + this.recognitionFileName);
+			//p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName);
+			
+			System.out.println("this.recognitionFileName = "+this.recognitionFileName);
+			System.out.println("C:\\Program Files\\WinRAR\\WinRAR.exe\\ x " + this.recognitionFileName);
+			p = Runtime.getRuntime().exec("C:\\Program Files\\WinRAR\\WinRAR.exe x " + this.recognitionFileName);
 			p.waitFor();
-			System.out.println("tar -jxvf " + this.recognitionFileName);
-			p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName);
-			p.waitFor();
+
 			String domainFilePath = "domain.pddl";
 			Path path = Paths.get(domainFilePath);
 			String domainContent = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
@@ -99,6 +151,25 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 		} catch (IOException | InterruptedException e){
 			e.printStackTrace();
 		}
+	}
+	
+	public Plan makePlan() throws UnreachableGoalException {
+		return this.makePlan(this.initialState, this.realGoal);
+	}
+	
+	public Plan makePlan(Set<Fact> state, GroundFact goal) throws UnreachableGoalException {
+		if (this.fileManager == null) {
+			return this.doPlanGraphPlan(state, goal);
+		}
+		
+		Plan p = this.fileManager.getPlanFromFile(state, goal);
+		if (p != null) {
+			return p;
+		}
+		
+		p = doPlanGraphPlan(state, goal);
+		this.fileManager.savePlanToFile(state, p);
+		return p;
 	}
 	
 	public GoalRecognition(String domainFile, String problemFile, String candidateGoalsFile, String observationsFile, String realGoalFile){
