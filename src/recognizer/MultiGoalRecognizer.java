@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import statistics.StatisticsForGraphs;
 import file_managers.FileManager;
 import javaff.data.Action;
 import javaff.data.GroundFact;
@@ -123,24 +124,18 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		int maxGoalsCombinations = 1;
 		ContributionMap contributionMap = new ContributionMap();
 		
-		//%Map<GroundFact, List<Integer>> goalsTostepsNumToReachGoal = new HashMap<>();
-		//%Map<GroundFact, List<Boolean>> goalsToContibuteSteps= new HashMap<>();
+		// Initiate statistics data for graphs.
+		StatisticsForGraphs graphStatistics = new StatisticsForGraphs(candidateGoals); 
 		
-		//%for(GroundFact goal : this.candidateGoals) {
-		//%	goalsTostepsNumToReachGoal.put(goal, new ArrayList<Integer>());
-		//%	goalsToContibuteSteps.put(goal, new ArrayList<Boolean>());
-		//%}
-		
-		// Initiate statistics data.
-		Map<GroundFact, List<Float>> goalsToProbabiltyStats = new HashMap<>();
-		Map<GroundFact, List<Float>> goalsToScoresStats = new HashMap<>();
+		//Map<GroundFact, List<Float>> goalsToProbabiltyStats = new HashMap<>();
+		//Map<GroundFact, List<Float>> goalsToScoresStats = new HashMap<>();
 		// Is used for logging when one observation is analyzed twice, it happens when the list if potential goals is updated.
-		List<Action> observationAnalyzed = new LinkedList<Action>(); 
+		//List<Action> observationAnalyzed = new LinkedList<Action>(); 
 		
-		for (GroundFact goal: this.candidateGoals) {
-			goalsToProbabiltyStats.put(goal, new ArrayList<Float>());
-			goalsToScoresStats.put(goal, new ArrayList<Float>());
-		}
+		//for (GroundFact goal: this.candidateGoals) {
+		//	goalsToProbabiltyStats.put(goal, new ArrayList<Float>());
+		//	goalsToScoresStats.put(goal, new ArrayList<Float>());
+		//}
 		
 		// For each observation
 		System.out.println("observation:"+ this.observations);
@@ -168,19 +163,19 @@ public class MultiGoalRecognizer extends GoalRecognition {
 					GroundFact curr_goal = cmplxGoal.getGoal();
 				
 					System.out.println("\n\t # Goal:" + curr_goal );
-					Plan idealPlan = this.makePlan(
-							initialState, curr_goal);
+					Plan idealPlan = this.makePlan(initialState, curr_goal);
 					numberOfCallsPlanner++;
 					System.out.println("\t # Ideal Plan of G: " + idealPlan.getPlanLength());
 					System.out.println("\t # " + idealPlan);
 					List<Action> mMinus = mObservationsGoals.get(curr_goal);
 					
+					// Ask Mor about this, why each goal has a different list that contains all the seen observations?
+					// Why not having one list for all the goals?
 					if(mMinus == null){
 						List<Action> mMinusNew = new ArrayList<Action>();
 						mMinus = mMinusNew;
 						mMinusNew.add(o);
 						mObservationsGoals.put(curr_goal , mMinusNew);
-						
 					} else if(!wasCurrObservationAnalyzed) mMinus.add(o);
 					
 					//Plan mPlus = this.makePlan(currentState.getFacts(), curr_goal, (int)observationCounter);
@@ -195,28 +190,18 @@ public class MultiGoalRecognizer extends GoalRecognition {
 					sumOfScores += score;
 					goalsToScores.put(curr_goal, score);
 				
-					// Scores for goal combination. If the goal handled is an atomic goal.
+					// Scores for goal-combination. If the goal handled is an atomic goal.
 					if ((cmplxGoal.getAtomicGoalsNum() == 1) && (!wasCurrObservationAnalyzed)) {
-						// If this is the time we update the contribution map.
+						// If this is the first time we update the contribution map.
 						if (!contributionMap.IsInitiated(curr_goal)) {
 							contributionMap.InitiateContributionMap(curr_goal, idealPlan.getPlanLength());
 						}
 						contributionMap.UpdateContributionMap(cmplxGoal.getGoal(), mPlus.getPlanLength());
-						//%List<Integer> lstStepsNum = goalsTostepsNumToReachGoal.get(cmplxGoal.getGoal());
-						//%List<Boolean> lstContibuteSteps = goalsToContibuteSteps.get(cmplxGoal.getGoal());
-					
-						//%Boolean isContributed = false;
-						// If the current observation contributes to reach this goal. 
-						//%if(lstStepsNum.get((int)observationCounter - 1) > mPlus.getPlanLength()){
-						//%	isContributed = true;
-						//%}
-					
-						//%lstContibuteSteps.add(isContributed);
-						//%lstStepsNum.add(mPlus.getPlanLength());
 					}
 				} // END OF for(ComplexGoal cmplxGoal: this.cmplxGoals)- observation analysis?
 				
-				observationAnalyzed.add(o);
+				graphStatistics.addObservation(o);
+				//observationAnalyzed.add(o);
 				wasCurrObservationAnalyzed = true;
 				
 				// Calculates the probability for each goal, after seeing the current observation.
@@ -233,8 +218,9 @@ public class MultiGoalRecognizer extends GoalRecognition {
 					goalsProbabilities.put(goal, probabilityOfG);
 				
 					// Save the probabilities and the scores.
-					goalsToProbabiltyStats.get(goal).add(probabilityOfG);
-					goalsToScoresStats.get(goal).add(goalsToScores.get(goal)); 
+					graphStatistics.AddStatsToGoals(goal, goalsToScores.get(goal), probabilityOfG);
+					//goalsToProbabiltyStats.get(goal).add(probabilityOfG);
+					//goalsToScoresStats.get(goal).add(goalsToScores.get(goal)); 
 				
 					if(probabilityOfG > highestProbability){
 						mostLikelyGoal = goal;
@@ -244,41 +230,21 @@ public class MultiGoalRecognizer extends GoalRecognition {
 			
 							
 				// Considering multiple goals.
-				// If no goal got a 'perfect score', (all the observations contributes to the goal).
+				// If there is a goal with a 'perfect score', (all the observations contributes to the goal).
 				if (Collections.max(goalsToScores.values()) >= 0.9 || (maxGoalsCombinations >= this.candidateGoals.size())){
 					doneWithCurrObservation = true;
 				} else {
-				
 					List<ComplexGoal> newcmplxGoals = new LinkedList<ComplexGoal>();
 				
 					// While new goals were not found.
 					while((newcmplxGoals.size() == 0) && (maxGoalsCombinations < this.candidateGoals.size())) {
+						// Increase the maximum number of atomic goals allowed in a combination.
+						// And search for new goal combination to consider.
 						maxGoalsCombinations++;
-						//newcmplxGoals = this.getCandidiatsforCombinedGoals(maxGoalsCombinations, goalsToContibuteSteps);
 						newcmplxGoals = contributionMap.getCandidiatsforCombinedGoals(maxGoalsCombinations);
 					}
 				
-					// Add the new goals to all the relevant data structures.
-					for (ComplexGoal newcmplxGoal : newcmplxGoals) {
-						// If this goals is not already considered.
-						if(!this.cmplxGoals.contains(newcmplxGoal)) {
-							System.out.println("Addind goal" + newcmplxGoal.getGoal());
-							this.cmplxGoals.add(newcmplxGoal);
-							goalsToScoresStats.put(newcmplxGoal.getGoal(), new ArrayList<Float>());
-							goalsToProbabiltyStats.put(newcmplxGoal.getGoal(), new ArrayList<Float>());
-
-							int numOfAnalizedObservation = observationAnalyzed.size();
-							for (int iObs = 0; iObs < numOfAnalizedObservation; iObs++) {
-								GroundFact currGoal = newcmplxGoal.getGoal();
-								goalsToScoresStats.get(currGoal).add((float) 0);
-								goalsToProbabiltyStats.get(currGoal).add((float)0);
-							
-								GroundFact onlyToGetTheObservationsSeenSoFar = this.candidateGoals.get(0);
-								List<Action> mMinusNew = new ArrayList<Action>(mObservationsGoals.get(onlyToGetTheObservationsSeenSoFar));
-								mObservationsGoals.put(newcmplxGoal.getGoal(), mMinusNew);
-							}
-						}
-					}
+					this.AddNewGoals(newcmplxGoals, graphStatistics, mObservationsGoals);
 				} // END OF ELSE  (Collections.max(goalsToScores.values()) < 0.9)				
 			} // END OF while (!doneWithCurrObservation)
 			Set<GroundFact> recognizedGoals = new HashSet<>();
@@ -295,8 +261,8 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		} // END OF for(Action o: this.observations)
 		
 		// Save general statistics, to be plotted later.
-		this.SaveStatsToFile(this.realGoal, goalsToScoresStats, "ScoreStats", observationAnalyzed);
-		this.SaveStatsToFile(this.realGoal, goalsToProbabiltyStats, "ProbStats", observationAnalyzed);
+		this.SaveStatsToFile(this.realGoal, graphStatistics.getScoresStats(), "ScoreStats", graphStatistics.getObservations());
+		this.SaveStatsToFile(this.realGoal, graphStatistics.getProbabilityStats(), "ProbStats", graphStatistics.getObservations());
 		
 		// Print general statistics.
 		float topFirstRankedPercent  = (topFirstFrequency/observationCounter);
@@ -311,97 +277,25 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		
 		return new GoalRecognitionResult(topFirstRankedPercent, convergencePercent, this.candidateGoals.size(), this.observations.size(), this.getAverageOfFactLandmarks(), numberOfCallsPlanner);
 	}
-
-	/*
-	//private int countContibuteSteps(List<Boolean> lstContributionSteps) {
-	//	int sum = 0;
-		
-	//	for (Boolean isContributed: lstContributionSteps) {
-	//		if (isContributed) {
-	//			sum++;
-	//		}
-	//	}
-		
-	//	return sum;
-	//}
 	
-	// I need pycharm for this.
-	//private List<Boolean> sumContributions(List<Boolean> lstContributionSteps1, List<Boolean> lstContributionSteps2){
-	//	List<Boolean> sumContributions = new ArrayList<Boolean>();
-		
-	//	for(int i = 0; i < lstContributionSteps1.size(); i++) {
-	//		sumContributions.add(lstContributionSteps1.get(i) || lstContributionSteps2.get(i));
-	//	}
-	//	return sumContributions;
-	//}
-	
-	//private List<ComplexGoal> getCandidiatsforCombinedGoals(int sizeOfCombination, Map<GroundFact, List<Boolean>> goalsToContibuteSteps) {
-	//	float thresholdScore = (float)1 / (float)sizeOfCombination;
-	//	List<ComplexGoal>  newcomplxGoals = new LinkedList<ComplexGoal>();
-		
-		// Goes over all the original goals.
-	//	for (GroundFact goal : this.candidateGoals) {
-	//		float expScore = this.countContibuteSteps(goalsToContibuteSteps.get(goal));
-	//		expScore /=  goalsToContibuteSteps.get(goal).size();
+	private void AddNewGoals(List<ComplexGoal> newcmplxGoals, StatisticsForGraphs graphStatistics, Map<GroundFact, List<Action>> mObservationsGoals) {
+		for (ComplexGoal newcmplxGoal : newcmplxGoals) {
 			
-	//		if (expScore >= thresholdScore) {
-	//			List<ComplexGoal> newCmplxGoals = this.getAllGoodCombinationOfGoal(this.goalToComplexGoal.get(goal), sizeOfCombination,
-	//																			goalsToContibuteSteps, goalsToContibuteSteps.get(goal));
-	//			newcomplxGoals.addAll(newCmplxGoals);
-	//		}
-	//	}
-	//	return  newcomplxGoals ;
-	//}
-	
-	//private List<ComplexGoal> getAllGoodCombinationOfGoal(ComplexGoal cmplxGoal, int maxSizeOfCombination, 
-	//													  Map<GroundFact, List<Boolean>> goalsToContibuteSteps,
-	//													  List<Boolean> contributeStepsOfcmplxGoal){
-	//	List<ComplexGoal> lstNewGoals = new LinkedList<ComplexGoal>();
-		
-		// If the complex goals is a combination of the maximum number of original goals allowed.
-	//	if (cmplxGoal.getAtomicGoalsNum() == maxSizeOfCombination) {
-	//		// Return only this goal.
-	//		lstNewGoals.add(cmplxGoal);
-	//		return lstNewGoals;
-	//	}
-		
-		// thresholdScore is the score for 1 original goal, multiply the number of goals combined in the complexGoal.
-		// The maximum thresholdScore is 0.9. 
-	//	float thresholdScore = (float)1 / (float)maxSizeOfCombination;
-	//	thresholdScore *= (cmplxGoal.getAtomicGoalsNum() + 1);
-	//	thresholdScore = Math.min((float)0.9, thresholdScore);
-	//	
-		// Goes over all the original goals.
-	//	for (GroundFact goal : this.candidateGoals) {
-			// Get the index of the current goal.
-	//		ComplexGoal cmplxTemp = this.goalToComplexGoal.get(goal);
-	//		Set<Integer> setIndexes = cmplxTemp.getAtomicGoalIndexes();
-	//		Integer index = (Integer)setIndexes.toArray()[0];
-			
-			// If the current goal is not already combined in the complex goal.
-	//		if (!cmplxGoal.getAtomicGoalIndexes().contains(index)) {
-	//			List<Boolean> contributionOfCurrGoal = goalsToContibuteSteps.get(goal);
-	//			List<Boolean> contributionWithCurrGoal = this.sumContributions(contributeStepsOfcmplxGoal, contributionOfCurrGoal); 
-	//			float expScore = countContibuteSteps(contributionWithCurrGoal);
-	//			expScore /= contributionWithCurrGoal.size();
+			// If this goals is not already added.
+			if(!this.cmplxGoals.contains(newcmplxGoal)) {
+				System.out.println("Addind goal" + newcmplxGoal.getGoal());
+				this.cmplxGoals.add(newcmplxGoal);
 				
-	//			if(expScore >= thresholdScore) {
-	//				// Create a new complex goal from the combination of cmplxGoal and goal. 
-	//				List<Integer> indexes = new ArrayList<Integer>(cmplxGoal.getAtomicGoalIndexes());
-	//				indexes.add(index);
-	//				ComplexGoal newComplexGoal = new ComplexGoal(this.candidateGoals, indexes);
+				// Add the new goal to the class that hold statistics for graphs.
+				graphStatistics.addNewGoal(newcmplxGoal.getGoal());
 				
-	//				List<ComplexGoal> lst = this.getAllGoodCombinationOfGoal(newComplexGoal, maxSizeOfCombination, 
-	//						goalsToContibuteSteps, contributionWithCurrGoal);
-	//				lstNewGoals.addAll(lst);
-	//			}
-	//		}
-	//	}
+				GroundFact onlyToGetTheObservationsSeenSoFar = this.candidateGoals.get(0);
+				List<Action> mMinusNew = new ArrayList<Action>(mObservationsGoals.get(onlyToGetTheObservationsSeenSoFar));
+				mObservationsGoals.put(newcmplxGoal.getGoal(), mMinusNew);
+			}
+		}
 
-	//	return lstNewGoals;
-	//}
-	
-		*/
+	}
 	
 	protected class ContributionMap {
 		Map<GroundFact, List<Integer>> goalsTostepsNumToReachGoal;
@@ -467,7 +361,6 @@ public class MultiGoalRecognizer extends GoalRecognition {
 			return sumContributions;
 		}
 		
-		//%public  List<ComplexGoal> getCandidiatsforCombinedGoals(int sizeOfCombination, Map<GroundFact, List<Boolean>> goalsToContibuteSteps) {
 		public  List<ComplexGoal> getCandidiatsforCombinedGoals(int sizeOfCombination) {
 			float thresholdScore = (float)1 / (float)sizeOfCombination;
 			List<ComplexGoal>  newcomplxGoals = new LinkedList<ComplexGoal>();
@@ -486,10 +379,6 @@ public class MultiGoalRecognizer extends GoalRecognition {
 			}
 			return  newcomplxGoals ;
 		}
-		
-		//public List<ComplexGoal> getAllGoodCombinationOfGoal(ComplexGoal cmplxGoal, int maxSizeOfCombination, 
-		//		  Map<GroundFact, List<Boolean>> goalsToContibuteSteps,
-		//		  List<Boolean> contributeStepsOfcmplxGoal) {
 			
 		public List<ComplexGoal> getAllGoodCombinationOfGoal(ComplexGoal cmplxGoal, int maxSizeOfCombination, List<Boolean> contributeStepsOfcmplxGoal) {
 			List<ComplexGoal> lstNewGoals = new LinkedList<ComplexGoal>();
