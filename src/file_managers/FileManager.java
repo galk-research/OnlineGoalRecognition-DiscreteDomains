@@ -1,4 +1,6 @@
 package file_managers;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -39,10 +41,10 @@ public class FileManager {
 	}
 
 	private void loadFilesNames() {	
-		String dbfilePath = this.filePath + "\\" + this.planFilesDir + "\\" + this.databaseFileName;
-		String folderPath = this.filePath + "\\" + this.planFilesDir;
+		Path dbfilePath = Paths.get(this.filePath, this.planFilesDir, this.databaseFileName);
+		Path folderPath  = Paths.get(this.filePath, this.planFilesDir);
 		try {
-			File folder = new File(folderPath);
+			File folder = folderPath.toFile();
 			if (!folder.exists()) {
 				boolean succeed =  folder.mkdirs();
 				if (!succeed) {
@@ -50,7 +52,7 @@ public class FileManager {
 				}
 			}
 			
-			File f = new File(dbfilePath);
+			File f = dbfilePath.toFile();
 			// If there is no data base file that holds the plan files name, create this file.
 			if (!f.exists()) {
 				f.createNewFile();
@@ -83,11 +85,11 @@ public class FileManager {
 		this.dbIndex++;
 		
 		// Update the saved file with the new entry.
-		String filePath = this.filePath + "\\" + this.planFilesDir + "\\" + this.databaseFileName;
+		Path filePath = Paths.get(this.filePath , this.planFilesDir, this.databaseFileName);
 		try {
 			String lineToAdd = fileName + ":" + this.planToFileName.get(fileName) + "\n"; 
 			
-			File f = new File(filePath);
+			File f = filePath.toFile();
 		    FileWriter writer = new FileWriter(f, true);
 		    writer.append(lineToAdd);
 		    writer.close();
@@ -158,13 +160,14 @@ public class FileManager {
 			return null;
 		}
 		
-		fileName = this.filePath + "\\" + this.planFilesDir + "\\" + this.planToFileName.get(fileName);
+		//fileName = this.filePath + "\\" + this.planFilesDir + "\\" + this.planToFileName.get(fileName);
+		Path filePath = Paths.get(this.filePath , this.planFilesDir , this.planToFileName.get(fileName));
 		
 		Plan p = new TotalOrderPlan(goal);
 		Boolean isDone = false;
 		
 		try {
-			File planFile = new File(fileName);
+			File planFile = filePath.toFile();
 			Scanner myReader = new Scanner(planFile);
 			
 			while (myReader.hasNextLine()) {
@@ -196,13 +199,14 @@ public class FileManager {
 	}
 	
 	public void printWorldStatesToFile(MultiGoalRecognizer recognizer) {
-		String fileName = this.filePath + "\\" + this.problemDefinitionDir + "\\init_states.pddl";  
+		//String fileName = this.filePath + "\\" + this.problemDefinitionDir + "\\init_states.pddl";
+		Path filePath = Paths.get(this.filePath , this.problemDefinitionDir , "init_states.pddl");
 		List<STRIPSState> lstStates =  recognizer.getWorldStatesDuringPlan();
 		
 		try {
-			File myObj = new File(fileName);
+			File myObj = filePath.toFile();
 			myObj.createNewFile();
-		    FileWriter myWriter = new FileWriter(fileName);
+		    FileWriter myWriter = new FileWriter(filePath.toFile());
 		    
 		    for(STRIPSState state: lstStates){
 		    	myWriter.write(this.formatInitState(state));
@@ -222,12 +226,13 @@ public class FileManager {
 			this.addFileNameToMap(fileName);
 		}
 		
-		fileName = this.filePath + "\\" + this.planFilesDir + "\\" + this.planToFileName.get(fileName);
+		//fileName = this.filePath + "\\" + this.planFilesDir + "\\" + this.planToFileName.get(fileName);
+		Path filePath = Paths.get(this.filePath,this.planFilesDir, this.planToFileName.get(fileName));
 		
 		try {
-			File myObj = new File(fileName);
+			File myObj = filePath.toFile();// File(fileName);
 			myObj.createNewFile();
-		    FileWriter myWriter = new FileWriter(fileName);
+		    FileWriter myWriter =  new FileWriter(filePath.toFile());
 		    
 		    for(Action action : pln.getActions()){
 		    	myWriter.write(action.toString());
