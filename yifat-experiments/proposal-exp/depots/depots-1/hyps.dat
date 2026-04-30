@@ -1,0 +1,5 @@
+(on crate5 pallet5)
+(on crate3 crate5)
+(at truck0 distributor1)
+(at crate4 distributor1)
+(on crate2 pallet4)

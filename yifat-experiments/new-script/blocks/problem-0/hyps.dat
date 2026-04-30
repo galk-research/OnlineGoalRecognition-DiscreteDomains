@@ -1,0 +1,5 @@
+(ontable o),(clear w)
+(ontable r),(on a c),(clear r)
+(ontable p),(on d a),(handempty)
+(on w o),(clear e)
+(clear d),(clear p),(ontable e)

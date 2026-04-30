@@ -1,0 +1,6 @@
+(and (clear d)  (clear a) )
+[unstack f e, put-down f, unstack c b, unstack c b, put-down c, unstack e d, put-down e, unstack b a]
+(and (clear a) ),(and (clear d) ),(and (clear d)  (clear a) ),
+0.6 0.6 0.6 0.6 0.6 0.42857143 0.42857143 0.42857143 
+1.0 1.0 0.6 0.6 0.6 0.6 0.5 0.42857143 
+0.0 0.0 0.0 1.0 1.0 1.0 1.0 1.0 

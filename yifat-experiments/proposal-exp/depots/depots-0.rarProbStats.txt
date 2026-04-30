@@ -1,0 +1,8 @@
+(and (at crate4 distributor1) )
+[drive truck1 distributor1 distributor2, lift hoist5 crate4 crate1 distributor2, load hoist5 crate4 truck1 distributor2, drive truck1 distributor2 distributor1, unload hoist4 crate4 truck1 distributor1, drop hoist4 crate4 pallet4 distributor1]
+(and (on crate5 pallet5) ),(and (on crate3 crate5) ),(and (at truck0 distributor1) ),(and (at crate4 distributor1) ),(and (on crate2 pallet4) ),
+0.21766785 0.24870469 0.23913044 0.23611484 0.23836447 0.23583463 
+0.22261484 0.23316064 0.26086956 0.26160452 0.26768205 0.26799387 
+0.118727915 0.08290157 0.06521739 0.05580896 0.050562166 0.04594181 
+0.23745583 0.24870469 0.26086956 0.2790448 0.30337298 0.32159266 
+0.20353357 0.18652852 0.17391305 0.16742688 0.1400183 0.12863706 
