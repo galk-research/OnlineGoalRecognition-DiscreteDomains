@@ -10,6 +10,8 @@ public class FerryFileManager extends FileManager{
 		String shortStr = str.toUpperCase();
 		
 		// Delete predicats that stays the same no matter what actions are performed.
+		shortStr = shortStr.replaceAll("AT HOIST\\d* DEPOT\\d*, ", "");
+		
 		shortStr = shortStr.replaceAll("\\(LOCATION [^\\)]*\\)", "");
 		shortStr = shortStr.replaceAll("\\(CAR [^\\)]*\\)", "");
 		shortStr = shortStr.replaceAll("\\(NOT-EQ [^\\)]*\\)", "");

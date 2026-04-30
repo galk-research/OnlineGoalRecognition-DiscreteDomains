@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -22,14 +24,78 @@ public class FileManager {
 	private String filePath;
 	private String planFilesDir;
 	private String problemDefinitionDir;
-	
+	private String databaseFileName;
+	private Map<String, String> planToFileName;
+	private int dbIndex;
 	
 	public FileManager (String path, String plansDir, String problemDir) {
 		this.filePath = path;
 		this.planFilesDir = plansDir;
 		this.problemDefinitionDir = problemDir;
+		this.planToFileName = new HashMap<String, String>();
+		this.dbIndex = -1;
+		databaseFileName = "files_mappping.txt";
+		this.loadFilesNames();
 	}
 
+	private void loadFilesNames() {	
+		String dbfilePath = this.filePath + "\\" + this.planFilesDir + "\\" + this.databaseFileName;
+		String folderPath = this.filePath + "\\" + this.planFilesDir;
+		try {
+			File folder = new File(folderPath);
+			if (!folder.exists()) {
+				boolean succeed =  folder.mkdirs();
+				if (!succeed) {
+					System.out.println("There was a problem creating the directory: " + folderPath);
+				}
+			}
+			
+			File f = new File(dbfilePath);
+			// If there is no data base file that holds the plan files name, create this file.
+			if (!f.exists()) {
+				f.createNewFile();
+			// If the data base file exists, load it.
+			}else {
+				Scanner myReader = new Scanner(f);
+				while (myReader.hasNextLine()) {
+					// Put the entry in the local memory.
+					String data = myReader.nextLine();
+					String[] arrData  = data.split(":");
+					this.planToFileName.put(arrData[0], arrData[1]);
+					
+					// Update the highest index a file has in the data base. 
+					int temp = Integer.parseInt(arrData[1]);
+					if (temp > this.dbIndex) {
+						this.dbIndex = temp;
+					}
+			    }
+				myReader.close();
+			}
+		} catch (Exception e) {
+			System.out.println("A problem occured with the file: " + filePath);
+		}
+		this.dbIndex++;
+		
+	}
+	
+	private void addFileNameToMap(String fileName) {
+		this.planToFileName.put(fileName, String.valueOf(this.dbIndex));
+		this.dbIndex++;
+		
+		// Update the saved file with the new entry.
+		String filePath = this.filePath + "\\" + this.planFilesDir + "\\" + this.databaseFileName;
+		try {
+			String lineToAdd = fileName + ":" + this.planToFileName.get(fileName) + "\n"; 
+			
+			File f = new File(filePath);
+		    FileWriter writer = new FileWriter(f, true);
+		    writer.append(lineToAdd);
+		    writer.close();
+		} catch (Exception e) {
+			System.out.println("A problem occured with the file: " + filePath);
+		}
+	}
+	
 	public String getShortRepresentation(String str) {
 		return str;
 	}
@@ -87,7 +153,12 @@ public class FileManager {
 	
 	public Plan getPlanFromFile(Set<Fact> state, Fact goal) {
 		String fileName = this.buildFileName(state, goal);
-		fileName = this.filePath + "\\" + this.planFilesDir + "\\" + fileName + ".pddl";
+		
+		if (!this.planToFileName.containsKey(fileName)) {
+			return null;
+		}
+		
+		fileName = this.filePath + "\\" + this.planFilesDir + "\\" + this.planToFileName.get(fileName);
 		
 		Plan p = new TotalOrderPlan(goal);
 		Boolean isDone = false;
@@ -147,7 +218,11 @@ public class FileManager {
 	
 	public void savePlanToFile(Set<Fact> startState ,Plan pln) {
 		String fileName = this.buildFileName(startState , pln.getGoal());
-		fileName = this.filePath + "\\" + this.planFilesDir + "\\" + fileName + ".pddl";
+		if (!this.planToFileName.containsKey(fileName)) {
+			this.addFileNameToMap(fileName);
+		}
+		
+		fileName = this.filePath + "\\" + this.planFilesDir + "\\" + this.planToFileName.get(fileName);
 		
 		try {
 			File myObj = new File(fileName);

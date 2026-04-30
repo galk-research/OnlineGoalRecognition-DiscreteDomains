@@ -9,10 +9,10 @@ public class DepotsFileManager extends FileManager {
 	public String getShortRepresentation(String str) {
 		String shortStr = str.toUpperCase();
 		// Delete predicats that stays the same no matter what action are performed. 
-		shortStr = shortStr.replaceAll("\\(AT HOIST\\d* DEPOT\\d*\\)", "");
-		shortStr = shortStr.replaceAll("\\(AT HOIST\\d* DISTRIBUTOR\\d*\\)", "");
-		shortStr = shortStr.replaceAll("\\(AT PALLET\\d* DEPOT\\d*\\)", "");
-		shortStr = shortStr.replaceAll("\\(AT PALLET\\d* DISTRIBUTOR\\d*\\)", "");
+		shortStr = shortStr.replaceAll("AT HOIST\\d* DEPOT\\d*, ", "");
+		shortStr = shortStr.replaceAll("AT HOIST\\d* DISTRIBUTOR\\d*, ", "");
+		shortStr = shortStr.replaceAll("AT PALLET\\d* DEPOT\\d*, ", "");
+		shortStr = shortStr.replaceAll("AT PALLET\\d* DISTRIBUTOR\\d*, ", "");
 		
 		// Create a shorter representation of all the pradicates.
 		shortStr = shortStr.replaceAll("CRATE", "CR");
