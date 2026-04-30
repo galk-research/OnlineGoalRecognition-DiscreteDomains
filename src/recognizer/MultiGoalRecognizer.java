@@ -70,6 +70,14 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		return lstWorldStates;
 	}
 	
+	// Why java does not have this a a built in function???
+	private int returnNumberOfAtomicGoals(GroundFact goal) {
+		String str_goal = goal.toString().replace(" ", "");
+		String str_goal_without_comas = str_goal.replace(")(", "!");
+		// Why??
+		return str_goal.length() - str_goal_without_comas.length() + 1;
+	}
+	
 	private void SaveStatsToFile(GroundFact realGoal, Map<GroundFact, List<Float>> goalsToStats, String statsName, List<Action> observationAnalyzed) {
 		try {
 			String fileName = this.getRecognitionFileName() + statsName + ".txt";
@@ -118,7 +126,9 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		float numberOfCallsPlanner = 0;
 		float observationCounter = 0;
 		float topFirstFrequency = 0;
+		float topFrequency = 0; 
 		float convergenceToTopRankedGoal = 0;
+		float lastCandidatesGoalsExpantionAtObs= 0;
 		
 		// Variables used to calculate when to add the complex goals.
 		int maxGoalsCombinations = 1;
@@ -126,16 +136,6 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		
 		// Initiate statistics data for graphs.
 		StatisticsForGraphs graphStatistics = new StatisticsForGraphs(candidateGoals); 
-		
-		//Map<GroundFact, List<Float>> goalsToProbabiltyStats = new HashMap<>();
-		//Map<GroundFact, List<Float>> goalsToScoresStats = new HashMap<>();
-		// Is used for logging when one observation is analyzed twice, it happens when the list if potential goals is updated.
-		//List<Action> observationAnalyzed = new LinkedList<Action>(); 
-		
-		//for (GroundFact goal: this.candidateGoals) {
-		//	goalsToProbabiltyStats.put(goal, new ArrayList<Float>());
-		//	goalsToScoresStats.put(goal, new ArrayList<Float>());
-		//}
 		
 		// For each observation
 		System.out.println("observation:"+ this.observations);
@@ -152,21 +152,17 @@ public class MultiGoalRecognizer extends GoalRecognition {
 			Map<GroundFact, Float> goalsProbabilities = new HashMap<GroundFact, Float>();
 			float highestProbability = 0;
 			
+			// Sometimes observations need to evaluated more than one time, due to more goals being considered.
 			while (!doneWithCurrObservation) {
 				float sumOfScores = 0f;
 				Map<GroundFact, Float> goalsToScores = new HashMap<>();
 				
-				
 				// For each potential goal.
 				for(ComplexGoal cmplxGoal: this.cmplxGoals){
-				
+
 					GroundFact curr_goal = cmplxGoal.getGoal();
-				
-					System.out.println("\n\t # Goal:" + curr_goal );
 					Plan idealPlan = this.makePlan(initialState, curr_goal);
 					numberOfCallsPlanner++;
-					System.out.println("\t # Ideal Plan of G: " + idealPlan.getPlanLength());
-					System.out.println("\t # " + idealPlan);
 					List<Action> mMinus = mObservationsGoals.get(curr_goal);
 					
 					// Ask Mor about this, why each goal has a different list that contains all the seen observations?
@@ -181,15 +177,13 @@ public class MultiGoalRecognizer extends GoalRecognition {
 					//Plan mPlus = this.makePlan(currentState.getFacts(), curr_goal, (int)observationCounter);
 					Plan mPlus = this.makePlan(currentState.getTrueFacts(), curr_goal);
 					numberOfCallsPlanner++;
-					System.out.println("\t # mMinus: " + mMinus.size());
-					System.out.println("\t # mPlus: " + mPlus.getPlanLength());
-					System.out.println("\t # idealPlan: " + idealPlan.getPlanLength());
 					float mG = mMinus.size() + mPlus.getPlanLength();
 					float score = this.match(mG, idealPlan.getPlanLength());
-					System.out.println("\t @@@@ Score: " + score);
 					sumOfScores += score;
 					goalsToScores.put(curr_goal, score);
-				
+					
+					this.printStatOfGoal(curr_goal, idealPlan, mMinus, mPlus, score);
+					
 					// Scores for goal-combination. If the goal handled is an atomic goal.
 					if ((cmplxGoal.getAtomicGoalsNum() == 1) && (!wasCurrObservationAnalyzed)) {
 						// If this is the first time we update the contribution map.
@@ -231,7 +225,8 @@ public class MultiGoalRecognizer extends GoalRecognition {
 							
 				// Considering multiple goals.
 				// If there is a goal with a 'perfect score', (all the observations contributes to the goal).
-				if (Collections.max(goalsToScores.values()) >= 0.9 || (maxGoalsCombinations >= this.candidateGoals.size())){
+				double max = Collections.max(goalsToScores.values());
+				if (Collections.max(goalsToScores.values()) >= 1 || (maxGoalsCombinations >= this.candidateGoals.size())){
 					doneWithCurrObservation = true;
 				} else {
 					List<ComplexGoal> newcmplxGoals = new LinkedList<ComplexGoal>();
@@ -243,10 +238,13 @@ public class MultiGoalRecognizer extends GoalRecognition {
 						maxGoalsCombinations++;
 						newcmplxGoals = contributionMap.getCandidiatsforCombinedGoals(maxGoalsCombinations);
 					}
-				
+
 					this.AddNewGoals(newcmplxGoals, graphStatistics, mObservationsGoals);
+					lastCandidatesGoalsExpantionAtObs = observationCounter;
 				} // END OF ELSE  (Collections.max(goalsToScores.values()) < 0.9)				
 			} // END OF while (!doneWithCurrObservation)
+			
+			// Save statistics for the algorithm.
 			Set<GroundFact> recognizedGoals = new HashSet<>();
 			for(GroundFact goal: goalsProbabilities.keySet())
 				if(goalsProbabilities.get(goal) == highestProbability)
@@ -254,9 +252,19 @@ public class MultiGoalRecognizer extends GoalRecognition {
 
 			if(recognizedGoals.size() == 1 && recognizedGoals.toArray()[0].equals(this.realGoal)){  
 				topFirstFrequency++;
+				topFrequency++;
 				convergenceToTopRankedGoal++;
-			} else convergenceToTopRankedGoal = 0;
-
+			} else {
+				convergenceToTopRankedGoal = 0;
+				
+				// Fix this, for the case if something is in the top rank than go out of the top ranked and than go in again.
+				for(GroundFact gf : recognizedGoals){
+					if (gf.equals(this.realGoal)) {
+						topFrequency++;
+					}
+				}
+				
+			}
 			
 		} // END OF for(Action o: this.observations)
 		
@@ -267,13 +275,43 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		// Print general statistics.
 		float topFirstRankedPercent  = (topFirstFrequency/observationCounter);
 		float convergencePercent = (convergenceToTopRankedGoal/observationCounter);
-		System.out.println("\n$$$$####> Top First Ranked Percent (%): " + topFirstRankedPercent);
+		System.out.println("\n$$$$####> Top First Ranked Percent(only 1) (%): " + topFirstRankedPercent);
+		System.out.println("\n$$$$####> Top Ranked Percent (among the top) (%): " + topFrequency/observationCounter);
 		System.out.println("$$$$####> Convergence Percent (%): " + convergencePercent);
-		System.out.println("$$$$####> Top Ranked First times: " + topFirstFrequency);
-		System.out.println("$$$$####> Total Candidate Goals: " + this.candidateGoals.size());
+		System.out.println("$$$$####> Top Ranked First times (only one): " + topFirstFrequency);
+		System.out.println("$$$$####> Top Ranked First times (amoung the top): " + topFrequency);
+		System.out.println("$$$$####> Total Candidate Goals: " + this.cmplxGoals.size());
+		System.out.println("$$$$####> Number of Atomic Goals: " + this.candidateGoals.size());
+		System.out.println("$$$$####> Number of Atomic Goals in Real Goal: " + this.returnNumberOfAtomicGoals(this.realGoal));
+		System.out.println("$$$$####> Largest Number of Atomic Goals in Candidates: " + maxGoalsCombinations);
+		System.out.println("$$$$####> Last candidate expantion was at ObservationNumber : " + lastCandidatesGoalsExpantionAtObs);
 		System.out.println("$$$$####> Total Observed Actions: " + observationCounter);
-		System.out.println("$$$$####> Total Number of Landmarks: " + this.getAverageOfFactLandmarks());
+		//System.out.println("$$$$####> Total Number of Landmarks: " + this.getAverageOfFactLandmarks());
 		System.out.println("$$$$####> Total Number of Calls to Planner: " + numberOfCallsPlanner);
+		
+		
+		try {
+			File myFile = new File("all_stats_file.txt");
+			try (FileWriter writer = new FileWriter(myFile, true)) {
+				writer.write(this.getRecognitionFileName() + ", ");
+				writer.write(Float.toString(topFirstRankedPercent) + ", ");
+				writer.write(Float.toString(topFrequency/observationCounter) + ", ");
+				writer.write(Float.toString(convergencePercent) + ", ");
+				writer.write(Float.toString(topFirstFrequency) + ", ");
+				writer.write(Float.toString(topFrequency) + ", ");
+				writer.write(this.cmplxGoals.size() + ", ");
+				writer.write(this.candidateGoals.size()+", ");
+				writer.write(this.returnNumberOfAtomicGoals(this.realGoal) + ", ");
+				writer.write(maxGoalsCombinations + ", ");
+				writer.write(lastCandidatesGoalsExpantionAtObs + ", ");
+				writer.write(Float.toString(observationCounter) + ", ");
+				writer.write(Float.toString(numberOfCallsPlanner) + "\n");
+			}
+				System.out.println("Successfully appended to the file.");
+		        } catch (IOException e) {
+		            System.err.println("An error occurred: " + e.getMessage());
+		        }
+		
 		
 		return new GoalRecognitionResult(topFirstRankedPercent, convergencePercent, this.candidateGoals.size(), this.observations.size(), this.getAverageOfFactLandmarks(), numberOfCallsPlanner);
 	}
@@ -296,6 +334,18 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		}
 
 	}
+	
+	private void printStatOfGoal(GroundFact goal, Plan idealPlan, List<Action> mMinus, Plan mPlus, float score) {
+		System.out.println("\n\t # Goal:" + goal );
+		System.out.println("\t # Ideal Plan of G from initial state: " + idealPlan.getPlanLength());
+		System.out.println("\t # " + idealPlan);
+		System.out.println("\t # mMinus: " + mMinus.size());
+		System.out.println("\t # mPlus: " + mPlus.getPlanLength());
+		System.out.println("\t # Ideal Plan of G from current state: " + mPlus.getPlanLength());
+		System.out.println("\t # " + mPlus.toString());
+		System.out.println("\t @@@@ Score: " + score);
+	}
+	
 	
 	protected class ContributionMap {
 		Map<GroundFact, List<Integer>> goalsTostepsNumToReachGoal;
@@ -332,7 +382,7 @@ public class MultiGoalRecognizer extends GoalRecognition {
 			Boolean isContributed = false;
 			// If the current step takes the agent closer to the goal.
 			// (The plan length before this step is bigger than the plan length after this step.)
-			if (stepsToGoal.getLast() > numberOfStepsToGoal) {
+			if (stepsToGoal.get(stepsToGoal.size() - 1) > numberOfStepsToGoal) {
 				isContributed = true;
 			}
 				
@@ -423,7 +473,6 @@ public class MultiGoalRecognizer extends GoalRecognition {
 			}
 			return lstNewGoals;
 		}
-		
 	}
 }
 
