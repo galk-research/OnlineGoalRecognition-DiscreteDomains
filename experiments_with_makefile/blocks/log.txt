@@ -1,0 +1,27 @@
+problem-0
+problem-0
+make -C ../../ problem-0.tar.bz2 problem-0 problem-0.txt
+problem-0
+make -C ../../ problem-0.tar.bz2 problem-0 problem-0.txt
+make[2]: Entering directory '/home/yifat/git_stuff/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Leaving directory '/home/yifat/git_stuff/OnlineGoalRecognition-DiscreteDomains'
+problem-0
+make -C ../../ problem-0.tar.bz2 problem-0 problem-0.txt
+make[2]: Entering directory '/home/yifat/git_stuff/OnlineGoalRecognition-DiscreteDomains'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals 
+Done!
+make[2]: Leaving directory '/home/yifat/git_stuff/OnlineGoalRecognition-DiscreteDomains'
+problem-0
+make -C ../../ problem-0.tar.bz2 problem-0 problem-0.txt
+make[2]: Entering directory '/home/yifat/git_stuff/OnlineGoalRecognition-DiscreteDomains'
+src/recognizer/GoalRecognitionResult.java src/recognizer/ComplexGoal.java src/recognizer/MultiGoalRecognizer.java src/recognizer/GoalRecognition.java src/recognizer/OnlineGoalRecognitionNaive.java src/file_managers/FileManager.java src/file_managers/DepotsFileManager.java src/file_managers/DWRFileManager.java src/file_managers/LogicticsFileManager.java src/file_managers/DriverlogFileManager.java src/file_managers/BlocksFileManager.java src/file_managers/CampusFileManager.java src/file_managers/test.java src/file_managers/EasyIpcFileManager.java src/file_managers/FileManagerFactory.java src/file_managers/FerryFileManager.java src/statistics/StatisticsForGraphs.java src/experiments/MultipleGoals.java
+lib/jgrapht-jdk1.6.jar lib/planning-landmarks3.0.jar lib/planning-utils3.1.jar lib/planning-utils3.2.jar
+lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar
+
+make[2]: Leaving directory '/home/yifat/git_stuff/OnlineGoalRecognition-DiscreteDomains'
+problem-0
+make -C ../../ problem-0.tar.bz2 problem-0 problem-0.txt
+make[2]: Entering directory '/home/yifat/git_stuff/OnlineGoalRecognition-DiscreteDomains'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals 
+Done!
+make[2]: Leaving directory '/home/yifat/git_stuff/OnlineGoalRecognition-DiscreteDomains'

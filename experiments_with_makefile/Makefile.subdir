@@ -1,0 +1,32 @@
+EXP = $(wildcard *tar.bz2)
+ABS   := $(abspath $(EXP))
+
+DIRNAME = $(notdir $(CURDIR))
+
+define FILE_NO_SUFFIX_NO_DIR
+	$(basename $(basename $(notdir $(1)))) 
+endef
+
+define FILE_NO_SUFFIX	
+	$(basename $(basename $(1)))
+endef
+
+define RUN
+	echo $(DIRNAME);
+	echo $(call FILE_NO_SUFFIX, $(1)) >>  makefile_log.txt;
+	echo $(MAKE) -C ../../ $(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1)).txt >> makefile_log.txt;
+	echo hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii >> makefile_log.txt
+	$(MAKE) print -C ../../ ARGS="$1" >> makefile_log.txt;
+	$(MAKE) print -C ../../ ARGS="$(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1).txt) Block-World" >> makefile_log.txt;
+	$(MAKE) run -C ../../ ARGS="$(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1).txt) Block-World" >> makefile_log.txt;	
+
+endef
+    
+all:
+	$(foreach FILE, $(ABS), $(call RUN,$(FILE)))
+
+
+#$(MAKE) print -C ../../ ARGS="$($(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1)).txt)" >> makefile_log.txt;
+#$(foreach FILE, $(EXP), call RUN, $(FILE))
+#:$(MAKE) -C ../../ $(1) call FILE_NO_SUFFIX, $(1): > call FILE_NO_SUFFIX,$(1).txt
+#$(MAKE) run -C ../../ $(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1)).txt >> makefile_log.txt;
