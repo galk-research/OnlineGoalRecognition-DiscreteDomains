@@ -92,27 +92,31 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 	public GoalRecognition(String fileName){
 		try{
 			this.fileManager = null;
-			this.dir("dataset\\blocks-world\\yifat_experiments");
+			String folderName = fileName.replaceAll("\\\\[^\\\\]*rar" , "");
+			//this.dir(folderName);
 			this.recognitionFileName = fileName;
 			System.out.println(fileName);
 			if(!Files.isReadable(Paths.get(fileName)))
 				throw new IOException(fileName + " not found.");
 
 			
-			this.DeleteAllFiles();
+			//this.DeleteAllFiles();
 			Process p; 
-			
-			//String cmdRemovingFiles = "rm -rf domain.pddl template.pddl templateInitial.pddl obs.dat hyps.dat plan.png real_hyp.dat";
-			//System.out.println(cmdRemovingFiles);
-			//p = Runtime.getRuntime().exec(cmdRemovingFiles);
-			//p.waitFor();
-			//System.out.println("tar -jxvf " + this.recognitionFileName);
-			//p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName);
-			
-			System.out.println("this.recognitionFileName = "+this.recognitionFileName);
-			System.out.println("C:\\Program Files\\WinRAR\\WinRAR.exe\\ x " + this.recognitionFileName);
-			p = Runtime.getRuntime().exec("C:\\Program Files\\WinRAR\\WinRAR.exe x " + this.recognitionFileName);
+			try {
+			String cmdRemovingFiles = "rm -rf domain.pddl template.pddl templateInitial.pddl obs.dat hyps.dat plan.png real_hyp.dat";
+			System.out.println(cmdRemovingFiles);
+			p = Runtime.getRuntime().exec(cmdRemovingFiles);
 			p.waitFor();
+			} catch(IOException e) {
+				System.out.println(e.getMessage());
+			}
+			System.out.println("tar -jxvf " + this.recognitionFileName);
+			p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName);
+			
+			//System.out.println("this.recognitionFileName = "+this.recognitionFileName);
+			//System.out.println("C:\\Program Files\\WinRAR\\WinRAR.exe\\ x " + this.recognitionFileName);
+			//p = Runtime.getRuntime().exec("C:\\Program Files\\WinRAR\\WinRAR.exe x " + this.recognitionFileName);
+			//p.waitFor();
 
 			String domainFilePath = "domain.pddl";
 			Path path = Paths.get(domainFilePath);
@@ -168,7 +172,14 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 		}
 		
 		p = doPlanGraphPlan(state, goal);
-		this.fileManager.savePlanToFile(state, p);
+		if (p == null) {
+			System.out.println("Plan was not found" );
+			System.out.println("From: " + state.toString());
+			System.out.println("To: " + goal.toString());
+		}
+		else {
+			this.fileManager.savePlanToFile(state, p);
+		}
 		return p;
 	}
 	
