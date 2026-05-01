@@ -110,8 +110,8 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 			} catch(IOException e) {
 				System.out.println(e.getMessage());
 			}
-			System.out.println("tar -jxvf " + this.recognitionFileName);
-			p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName);
+			System.out.println("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
+			p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
 			
 			//System.out.println("this.recognitionFileName = "+this.recognitionFileName);
 			//System.out.println("C:\\Program Files\\WinRAR\\WinRAR.exe\\ x " + this.recognitionFileName);
@@ -120,6 +120,7 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 
 			String domainFilePath = "domain.pddl";
 			Path path = Paths.get(domainFilePath);
+			Thread.sleep(1000);
 			String domainContent = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
 			domainContent = domainContent.replace("(increase (total-cost) 1)", "");
 			File domain = new File("domain.pddl");

@@ -21,7 +21,7 @@ public class ComplexGoal {
 		
 		// TODO gone when complex goal extends goal. 
 		if (this.atomicGoalsNum == 1) {
-			int index = combinedGoalsIndexes.getFirst();
+			int index = combinedGoalsIndexes.get(0);
 			this.goal = atomicGoals.get(index);
 			this.combinationIndexes.add(index);
 		}
