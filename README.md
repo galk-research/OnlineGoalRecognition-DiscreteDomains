@@ -1,24 +1,31 @@
-# OnlineGoalRecognition-DiscreteDomains
+This repository run a muiltple-goal recofnition problem.
 
-## Usage
+The main class: experiments.MultipleGoals, gets a tar.bz2 file file that contaions of a recognition problem, and run the muiltiple-goals recoger on this problem.
 
-- Option: Single tar.bz2 file containing domain, problem (initial state), set of goals, observations, correct goal, threshold value. For instance: experiments/logistics/100/logistics_p01_hyp-1_full.tar.bz2.
+The main gets 2 arguments:
+	1) The problem file .pddl
+	2) a path to a folder where all the temporary files the program uses will be saved.
+The main:
+	1) print to the consule all the details about the recognition process.
+	2) creates 2 files: problem_file.tar.bz2ScoreStats.txt and problem_file.tar.bz2ProbStats.txt that 
+	contains a summary of each score/probability each hypothesis was given at each iteration of the algorithem. 
+	The file are saved at the save folder the original tar.bz2 file is saved.
 
-> Parameters needed: < -online | -offline > < tar.bz2 file > < threshold_value >
+	
 
-```bash
-java -jar goalRecognizerMirroringLandmarks1.1.jar -online experiments/logistics/100/logistics_p01_hyp-1_full.tar.bz2 0.0
-```
+1)In order to run the program.
+	1) Nevigate to the root directory of this repository.
+	2) Run the command: make run <tar_file_path.tar.bz2> <folder_for_saving_plan_files_path>
+		ex: make run ./experiments/blockes/blocks_prob1.tar.bz2 ./experiments/blocks/blocks_prob1
 
-## Dependencies
+2) How to run the script with make file:
+    In order to run the script with make file you have to:
+    1) create a directory under the root directory.
+    2) copy the files Makefile and Makeflie.subdir that under the folder: "experiments_with_makefile" to that directory.
+    3) foreach recognition problem you want to run:
+	a) create a directory under the folder created at step 1.
+	b) copy the experiment pddl file to the directory created at step 3-a.
+    4) run the command "nohup make -j <num_of_cores> &"
+	ex:  nohup make -j 20 &"
 
-This goal recognizer uses the following libs (which are included in [lib](lib)):
-
-- jgrapht-jdk1.6.jar (A free Java Graph Library);
-- planning-landmarks3.0.jar (A Landmark Extraction Algorithm based on [Ordered Landmarks in Planning](https://www.aaai.org/Papers/JAIR/Vol22/JAIR-2208.pdf));
-- planning-utils3.2.jar (PDDL Parser and Planning data structure from JavaFF, including the FF Planner developed in Java);
-
-This project contains the sourcecode of two papers:
-
-- [Vered et al., Towards Online Goal Recognition Combining Goal Mirroring and Landmarks, AAMAS 2018](http://www.meneguzzi.eu/felipe/pubs/aamas-online-landmark-2018.pdf);
-- [Vered et al., Online Goal Recognition as Reasoning over Landmarks, AAAI/PAIR 2018](https://www.aaai.org/ocs/index.php/WS/AAAIW18/paper/viewPaper/17188).
+3) The tar.bz2 fil must contain:
