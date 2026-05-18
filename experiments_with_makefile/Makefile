@@ -1,4 +1,5 @@
-TIMEOUT=6
+TIMEOUT=1s
+TIMELOG = "time"
 
 SKIP=0SkipMe/ # Folders to skip by default; MAKE SURE TO ADD "/"
 
@@ -10,9 +11,11 @@ SUBDIRS  := $(filter-out $(SKIP), $(SUBDIRS1))
 
 $(TOPTARGETS): $(SUBDIRS)
 
+JAVA_PATH := ../../
+MAKE_FILE_PATH := ../../
 
 $(SUBDIRS):
-	@echo "Now working on problems in " $@
+	@echo "Top dir: Now working on problems in " $@
 	# cd $@ && make -f ../Makefile.subdir $(MAKECMDGOALS)
 	$(MAKE) -f ../Makefile.subdir -C $@ $(MAKECMDGOALS)
 

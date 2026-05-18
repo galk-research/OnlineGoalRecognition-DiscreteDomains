@@ -10,7 +10,6 @@ The main:
 	2) creates 2 files: problem_file.tar.bz2ScoreStats.txt and problem_file.tar.bz2ProbStats.txt that 
 	contains a summary of each score/probability each hypothesis was given at each iteration of the algorithem. 
 	The file are saved at the save folder the original tar.bz2 file is saved.
-
 	
 
 1)In order to run the program.
@@ -20,12 +19,11 @@ The main:
 
 2) How to run the script with make file:
     In order to run the script with make file you have to:
-    1) create a directory under the root directory.
-    2) copy the files Makefile and Makeflie.subdir that under the folder: "experiments_with_makefile" to that directory.
-    3) foreach recognition problem you want to run:
-	a) create a directory under the folder created at step 1.
-	b) copy the experiment pddl file to the directory created at step 3-a.
-    4) run the command "nohup make -j <num_of_cores> &"
+    1) Create your directories hierarchy of experiments under the folder "experiments_with_make_file".
+    	The script exept any hierarchy, in which:
+	a) Each experiment's tar.bz2 file saved in its own directory. (without more subdirectories with other experiments in that directory).  
+    2) Copy the files Makefile and Makeflie.subdir that under the folder: "experiments_with_makefile" to the root directory of your experiments.
+    4) run the command "nohup make -j <num_of_cores> &" from the root folder of your experiments.
 	ex:  nohup make -j 20 &"
 
 3) The tar.bz2 fil must contain:

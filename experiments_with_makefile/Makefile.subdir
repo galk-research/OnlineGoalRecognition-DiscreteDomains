@@ -1,7 +1,17 @@
+# Get the tar file in this directory, with thier full path.
 EXP = $(wildcard *tar.bz2)
 ABS   := $(abspath $(EXP))
 
+# Get the subdir of this directory.
+SUBDIRS := $(filter %/,$(wildcard */)) 
+
+# Get the relative path to the execution files.
+JAVA_PATH := $(JAVA_PATH)../
+MAKE_FILE_PATH := $(MAKE_FILE_PATH)../
+
+# Get the current dir name for debugging purpuses.
 DIRNAME = $(notdir $(CURDIR))
+
 
 define FILE_NO_SUFFIX_NO_DIR
 	$(basename $(basename $(notdir $(1)))) 
@@ -12,21 +22,37 @@ define FILE_NO_SUFFIX
 endef
 
 define RUN
+	echo java path $(JAVA_PATH)
 	echo $(DIRNAME);
 	echo $(call FILE_NO_SUFFIX, $(1)) >>  makefile_log.txt;
 	echo $(MAKE) -C ../../ $(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1)).txt >> makefile_log.txt;
-	echo hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii >> makefile_log.txt
-	$(MAKE) print -C ../../ ARGS="$1" >> makefile_log.txt;
-	$(MAKE) print -C ../../ ARGS="$(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1).txt) Block-World" >> makefile_log.txt;
-	$(MAKE) run -C ../../ ARGS="$(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1).txt) Block-World" >> makefile_log.txt;	
+	$(MAKE) print -C $(JAVA_PATH) ARGS="$1" >> makefile_log.txt;
+	$(MAKE) print -C $(JAVA_PATH) ARGS="$(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1).txt) Block-World" >> makefile_log.txt;
+	/usr/bin/time -p -o $$@.$(TIMELOG) timeout $(TIMEOUT) $(MAKE) run -C $(JAVA_PATH) ARGS="$(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1).txt) Block-World" >> run_log.txt;	
+	
 
 endef
-    
+   
+define SUB
+	@echo "Now working on problems in " $(1);
+	@echo "Make file path" $(MAKE_FILE_PATH);
+	# cd $(1) && make -f $(MAKE_FILE_PATH)Makefile.subdir $(MAKECMDGOALS);
+        $(MAKE) -f $(MAKE_FILE_PATH)Makefile.subdir -C $(1) $(MAKECMDGOALS);
+endef
+
+
+
+# If there are .tar files in this directory.
+ifneq ($(EXP),)
+
 all:
-	$(foreach FILE, $(ABS), $(call RUN,$(FILE)))
+	$(foreach FILE,$(ABS),$(call RUN,$(FILE))) \
 
+# else: the tar files are somewhere inside the subdirectories.
+else
 
-#$(MAKE) print -C ../../ ARGS="$($(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1)).txt)" >> makefile_log.txt;
-#$(foreach FILE, $(EXP), call RUN, $(FILE))
-#:$(MAKE) -C ../../ $(1) call FILE_NO_SUFFIX, $(1): > call FILE_NO_SUFFIX,$(1).txt
-#$(MAKE) run -C ../../ $(1) $(call FILE_NO_SUFFIX,$(1))  $(call FILE_NO_SUFFIX,$(1)).txt >> makefile_log.txt;
+all:
+	$(foreach FILE,$(SUBDIRS),$(call SUB,$(FILE))) \
+
+endif
+
