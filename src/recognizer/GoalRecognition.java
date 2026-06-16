@@ -110,6 +110,7 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 			} catch(IOException e) {
 				System.out.println(e.getMessage());
 			}
+<<<<<<< Updated upstream
 			
 			
 			File file = new File(this.recognitionFileName);
@@ -120,6 +121,12 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 			
 			System.out.println("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
 			p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
+=======
+			System.out.println("tar -jxvf " + this.recognitionFileName + " -C .");
+			//System.out.println("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
+			p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName + " -C . ");
+			//p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
+>>>>>>> Stashed changes
 			
 			//System.out.println("this.recognitionFileName = "+this.recognitionFileName);
 			//System.out.println("C:\\Program Files\\WinRAR\\WinRAR.exe\\ x " + this.recognitionFileName);

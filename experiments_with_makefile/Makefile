@@ -1,4 +1,4 @@
-TIMEOUT=1s
+TIMEOUT=120s
 TIMELOG = "time"
 
 SKIP=0SkipMe/ # Folders to skip by default; MAKE SURE TO ADD "/"
@@ -17,7 +17,7 @@ MAKE_FILE_PATH := ../../
 $(SUBDIRS):
 	@echo "Top dir: Now working on problems in " $@
 	# cd $@ && make -f ../Makefile.subdir $(MAKECMDGOALS)
-	$(MAKE) -f ../Makefile.subdir -C $@ $(MAKECMDGOALS)
+	$(MAKE) -f ../Makefile.subdir -C $@ $(MAKECMDGOALS) || true
 
 .PHONY: $(TOPTARGETS) $(SUBDIRS)
 
