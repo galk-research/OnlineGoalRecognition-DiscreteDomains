@@ -262,6 +262,9 @@ public class MultiGoalRecognizer extends GoalRecognition {
 					if (gf.equals(this.realGoal)) {
 						topFrequency++;
 					}
+					else {
+						topFrequency = 0;
+					}
 				}
 				
 			}
