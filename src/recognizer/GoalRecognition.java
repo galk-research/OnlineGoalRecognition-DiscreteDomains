@@ -110,6 +110,14 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 			} catch(IOException e) {
 				System.out.println(e.getMessage());
 			}
+			
+			
+			File file = new File(this.recognitionFileName);
+			String folderPath = file.getParent();
+			System.out.println("file's folder: " + folderPath);
+			System.setProperty("user.dir", folderPath);
+			System.out.println("Working directory:"+ System.getProperty("user.dir"));			
+			
 			System.out.println("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
 			p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
 			
