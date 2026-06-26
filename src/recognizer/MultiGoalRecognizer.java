@@ -130,6 +130,9 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		float convergenceToTopRankedGoal = 0;
 		float lastCandidatesGoalsExpantionAtObs= 0;
 		
+		Set<GroundFact> finalRecognizedGoals = new HashSet<>();
+		
+		
 		// Variables used to calculate when to add the complex goals.
 		int maxGoalsCombinations = 1;
 		ContributionMap contributionMap = new ContributionMap();
@@ -250,6 +253,8 @@ public class MultiGoalRecognizer extends GoalRecognition {
 				if(goalsProbabilities.get(goal) == highestProbability)
 					recognizedGoals.add(goal);
 
+			finalRecognizedGoals = recognizedGoals;
+			
 			if(recognizedGoals.size() == 1 && recognizedGoals.toArray()[0].equals(this.realGoal)){  
 				topFirstFrequency++;
 				topFrequency++;
@@ -296,18 +301,17 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		try {
 			File myFile = new File("all_stats_file.txt");
 			try (FileWriter writer = new FileWriter(myFile, true)) {
-				writer.write(this.getRecognitionFileName() + ", ");
-				writer.write(Float.toString(topFirstRankedPercent) + ", ");
-				writer.write(Float.toString(topFrequency/observationCounter) + ", ");
-				writer.write(Float.toString(convergencePercent) + ", ");
-				writer.write(Float.toString(topFirstFrequency) + ", ");
-				writer.write(Float.toString(topFrequency) + ", ");
-				writer.write(this.cmplxGoals.size() + ", ");
-				writer.write(this.candidateGoals.size()+", ");
-				writer.write(this.returnNumberOfAtomicGoals(this.realGoal) + ", ");
-				writer.write(maxGoalsCombinations + ", ");
-				writer.write(lastCandidatesGoalsExpantionAtObs + ", ");
-				writer.write(Float.toString(observationCounter) + ", ");
+				writer.write(this.getRecognitionFileName() + ", "); // Problem's name.
+				writer.write(this.realGoal + ", "); // real goal
+				writer.write(finalRecognizedGoals+ ", "); // goal recognized.
+				writer.write(Float.toString(topFirstFrequency) + ", "); // Real goal gets the best score.
+				writer.write(Float.toString(topFrequency) + ", "); // Real goal gets the best score, amoung others.
+				writer.write(this.cmplxGoals.size() + ", "); // Total number of considered goals.
+				writer.write(this.candidateGoals.size()+", "); // Number of atomic goals.
+				writer.write(this.returnNumberOfAtomicGoals(this.realGoal) + ", "); // Number of atomic goals in real goal.
+				writer.write(maxGoalsCombinations + ", "); // Number of atomic goals in (truely / flasy )Recogniszed goal
+				writer.write(lastCandidatesGoalsExpantionAtObs + ", "); // lastCandidatesGoalsExpantionAtObs 
+				writer.write(Float.toString(observationCounter) + ", "); 
 				writer.write(Float.toString(numberOfCallsPlanner) + "\n");
 			}
 				System.out.println("Successfully appended to the file.");
