@@ -102,38 +102,37 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 			
 			//this.DeleteAllFiles();
 			Process p; 
-			try {
-			String cmdRemovingFiles = "rm -rf domain.pddl template.pddl templateInitial.pddl obs.dat hyps.dat plan.png real_hyp.dat";
-			System.out.println(cmdRemovingFiles);
-			p = Runtime.getRuntime().exec(cmdRemovingFiles);
-			p.waitFor();
-			} catch(IOException e) {
-				System.out.println(e.getMessage());
-			}
-<<<<<<< Updated upstream
+			//try {
+			//String cmdRemovingFiles = "rm -rf domain.pddl template.pddl templateInitial.pddl obs.dat hyps.dat plan.png real_hyp.dat";
+			//System.out.println(cmdRemovingFiles);
+			//p = Runtime.getRuntime().exec(cmdRemovingFiles);
+			//p.waitFor();
+			//} catch(IOException e) {
+			//	System.out.println(e.getMessage());
+			//}
 			
 			
 			File file = new File(this.recognitionFileName);
 			String folderPath = file.getParent();
 			System.out.println("file's folder: " + folderPath);
-			System.setProperty("user.dir", folderPath);
-			System.out.println("Working directory:"+ System.getProperty("user.dir"));			
-			
-			System.out.println("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
-			p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
-=======
-			System.out.println("tar -jxvf " + this.recognitionFileName + " -C .");
+			//System.setProperty("user.dir", folderPath);
+			//System.out.println("Working directory:"+ System.getProperty("user.dir"));	
+			String [] command = new String [] {"tar" , "-jxvf" ,  this.recognitionFileName , "-C", folderPath};
+			for(int i=0; i< command.length;i++){
+				System.out.println(command[i]);
+			}
+			p = Runtime.getRuntime().exec(command);
+			//p = Runtime.getRuntime().exec(new String [] {"tar" , "-jxvf" ,  this.recognitionFileName , " -C ", "./" + folderPath  , " --strip-components=1"});
 			//System.out.println("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
-			p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName + " -C . ");
+			//p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName + " -C . ");
 			//p = Runtime.getRuntime().exec("tar -jxvf " + this.recognitionFileName + " -C . --strip-components=1");
->>>>>>> Stashed changes
 			
 			//System.out.println("this.recognitionFileName = "+this.recognitionFileName);
 			//System.out.println("C:\\Program Files\\WinRAR\\WinRAR.exe\\ x " + this.recognitionFileName);
 			//p = Runtime.getRuntime().exec("C:\\Program Files\\WinRAR\\WinRAR.exe x " + this.recognitionFileName);
 			//p.waitFor();
 
-			String domainFilePath = "domain.pddl";
+			String domainFilePath = folderPath +"/domain.pddl";
 			Path path = Paths.get(domainFilePath);
 			Thread.sleep(1000);
 			String domainContent = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
@@ -144,14 +143,14 @@ public abstract class GoalRecognition implements Callable<GoalRecognitionResult>
 			bw.write(domainContent);
 			bw.close();
 			
-			String initialFilePath = "templateInitial.pddl";
-			String observationsFilePath = "obs.dat";
-			String goalsFilePath = "hyps.dat";
-			String realGoalFilePath = "real_hyp.dat";
-			path = Paths.get("template.pddl");
+			String initialFilePath = folderPath + "/templateInitial.pddl";
+			String observationsFilePath = folderPath + "/obs.dat";
+			String goalsFilePath = folderPath + "/hyps.dat";
+			String realGoalFilePath = folderPath + "/real_hyp.dat";
+			path = Paths.get(folderPath + "/template.pddl");
 			String initialContent = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
 			initialContent = initialContent.replace("<HYPOTHESIS>", "");
-			File templateInitial = new File("templateInitial.pddl");
+			File templateInitial = new File(folderPath + "/templateInitial.pddl");
 			fw = new FileWriter(templateInitial.getAbsoluteFile());
 			bw = new BufferedWriter(fw);
 			bw.write(initialContent);
