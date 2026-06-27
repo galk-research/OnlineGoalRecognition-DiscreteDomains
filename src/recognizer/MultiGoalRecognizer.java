@@ -25,6 +25,7 @@ import javaff.search.UnreachableGoalException;
 
 public class MultiGoalRecognizer extends GoalRecognition {
 	private List<ComplexGoal> cmplxGoals;
+	private String stats_file_name;
 	
 	// TODO make complex goal extend GroundFact.
 	// This is disgusting.
@@ -32,6 +33,11 @@ public class MultiGoalRecognizer extends GoalRecognition {
 	
 	public MultiGoalRecognizer(String fileName, FileManager fileManager){
 		super(fileName, fileManager);
+		File file = new File(this.recognitionFileName);
+		String folderPath = file.getParent();
+		this.stats_file_name = folderPath + "/all_stats_file.txt";
+		
+		
 		this.cmplxGoals = new ArrayList<ComplexGoal>();
 		
 		// Create for each original goal, a complexGoal consist of 1 atomic goal.
@@ -299,10 +305,12 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		
 		
 		try {
-			File myFile = new File("all_stats_file.txt");
+			File myFile = new File(this.stats_file_name);
 			try (FileWriter writer = new FileWriter(myFile, true)) {
 				writer.write(this.getRecognitionFileName() + ", "); // Problem's name.
 				writer.write(this.realGoal + ", "); // real goal
+				String strFinalRecognizedGoals = finalRecognizedGoals.toString();
+				strFinalRecognizedGoals.replace(",", ";");
 				writer.write(finalRecognizedGoals+ ", "); // goal recognized.
 				writer.write(Float.toString(topFirstFrequency) + ", "); // Real goal gets the best score.
 				writer.write(Float.toString(topFrequency) + ", "); // Real goal gets the best score, amoung others.
