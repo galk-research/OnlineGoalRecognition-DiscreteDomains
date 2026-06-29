@@ -36,7 +36,7 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		File file = new File(this.recognitionFileName);
 		String folderPath = file.getParent();
 		this.stats_file_name = folderPath + "/all_stats_file.txt";
-		
+		System.out.println("stat file name" + this.stats_file_name);	
 		
 		this.cmplxGoals = new ArrayList<ComplexGoal>();
 		
@@ -266,6 +266,7 @@ public class MultiGoalRecognizer extends GoalRecognition {
 				topFrequency++;
 				convergenceToTopRankedGoal++;
 			} else {
+				topFrequency = 0;
 				convergenceToTopRankedGoal = 0;
 				
 				// Fix this, for the case if something is in the top rank than go out of the top ranked and than go in again.
@@ -307,20 +308,20 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		try {
 			File myFile = new File(this.stats_file_name);
 			try (FileWriter writer = new FileWriter(myFile, true)) {
-				writer.write(this.getRecognitionFileName() + ", "); // Problem's name.
-				writer.write(this.realGoal + ", "); // real goal
-				String strFinalRecognizedGoals = finalRecognizedGoals.toString();
-				strFinalRecognizedGoals.replace(",", ";");
-				writer.write(finalRecognizedGoals+ ", "); // goal recognized.
-				writer.write(Float.toString(topFirstFrequency) + ", "); // Real goal gets the best score.
-				writer.write(Float.toString(topFrequency) + ", "); // Real goal gets the best score, amoung others.
-				writer.write(this.cmplxGoals.size() + ", "); // Total number of considered goals.
-				writer.write(this.candidateGoals.size()+", "); // Number of atomic goals.
-				writer.write(this.returnNumberOfAtomicGoals(this.realGoal) + ", "); // Number of atomic goals in real goal.
-				writer.write(maxGoalsCombinations + ", "); // Number of atomic goals in (truely / flasy )Recogniszed goal
-				writer.write(lastCandidatesGoalsExpantionAtObs + ", "); // lastCandidatesGoalsExpantionAtObs 
-				writer.write(Float.toString(observationCounter) + ", "); 
-				writer.write(Float.toString(numberOfCallsPlanner) + "\n");
+				writer.write(this.getRecognitionFileName() + "# "); // Problem's name.
+				writer.write(this.realGoal + "# "); // real goal
+				writer.write(finalRecognizedGoals+ "# "); // goal recognized.
+				writer.write(Float.toString(topFirstFrequency) + "# "); // Real goal gets the best score.
+				writer.write(Float.toString(topFrequency) + "# "); // Real goal gets the best score, amoung others.
+				writer.write(this.cmplxGoals.size() + "# "); // Total number of considered goals.
+				writer.write(this.candidateGoals.size()+"# "); // Number of atomic goals.
+				writer.write(this.returnNumberOfAtomicGoals(this.realGoal) + "# "); // Number of atomic goals in real goal.
+				writer.write(maxGoalsCombinations + "# "); // Number of atomic goals in (truely / flasy )Recogniszed goal
+				writer.write(lastCandidatesGoalsExpantionAtObs + "# "); // lastCandidatesGoalsExpantionAtObs 
+				writer.write(Float.toString(observationCounter) + "# "); 
+				writer.write(Float.toString(numberOfCallsPlanner) + "#");
+				writer.write("\n");
+
 			}
 				System.out.println("Successfully appended to the file.");
 		        } catch (IOException e) {
