@@ -270,13 +270,17 @@ public class MultiGoalRecognizer extends GoalRecognition {
 				convergenceToTopRankedGoal = 0;
 				
 				// Fix this, for the case if something is in the top rank than go out of the top ranked and than go in again.
+				boolean isTop = false;
 				for(GroundFact gf : recognizedGoals){
 					if (gf.equals(this.realGoal)) {
-						topFrequency++;
+						isTop = true;	
+						break;
 					}
-					else {
-						topFrequency = 0;
-					}
+				}
+				if (isTop){
+					topFrequency++;
+				} else{
+					topFrequency=0;
 				}
 				
 			}
