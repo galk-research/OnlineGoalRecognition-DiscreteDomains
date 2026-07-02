@@ -1,0 +1,7 @@
+(and (ontable d)  (on f d)  (clear c) )
+[unstack d a, put-down d, unstack f e, stack f d, unstack a c]
+(and (on b a)  (on e f) ),(and (on c b)  (on a e) ),(and (on f d)  (clear c) ),(and (ontable d) ),
+0.25 0.25 0.27272728 0.2857143 0.26373628 
+0.25 0.25 0.27272728 0.2857143 0.2747253 
+0.25 0.25 0.27272728 0.2857143 0.32967034 
+0.25 0.25 0.18181819 0.14285715 0.13186814 

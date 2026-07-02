@@ -1,0 +1,4866 @@
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World
+hii
+4
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+here
+here here
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: ontable c, ontable d, on b a, ontable f, clear e, on e f, on a d, handempty, clear c, clear b
+#> Real Goal: (and (on d c)  (on b a)  (ontable e)  (on c b)  (clear d) )
+observation:[unstack e f, put-down e, unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c]
+$> Observation (0) :unstack e f
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 1
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack e c, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [put-down e, unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 1
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [put-down e]
+	 @@@@ Score: 1.0
+$> Observation (1) :put-down e
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 2
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+$> Observation (2) :unstack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+Addind goal(and (on b a)  (ontable e)  (clear d) )
+Addind goal(and (on d c)  (ontable e)  (on c b) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (3) :put-down b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (4) :unstack a d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (5) :put-down a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.33333334
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (6) :pick-up b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2857143
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (7) :stack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.25
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (8) :pick-up c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+Addind goal(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (9) :stack c b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (10) :pick-up d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.18181819
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 1.0
+$> Observation (11) :stack d c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.16666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.33333334
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.33333334
+$$$$####> Convergence Percent (%): 0.33333334
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 3
+$$$$####> Number of Atomic Goals in Real Goal: 5
+$$$$####> Largest Number of Atomic Goals in Candidates: 3
+$$$$####> Last candidate expantion was at ObservationNumber : 9.0
+$$$$####> Total Observed Actions: 12.0
+$$$$####> Total Number of Calls to Planner: 136.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World
+hii
+4
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+here
+here here
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: ontable c, ontable d, on b a, ontable f, clear e, on e f, on a d, handempty, clear c, clear b
+#> Real Goal: (and (on d c)  (on b a)  (ontable e)  (on c b)  (clear d) )
+observation:[unstack e f, put-down e, unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c]
+$> Observation (0) :unstack e f
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 1
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack e c, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [put-down e, unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 1
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [put-down e]
+	 @@@@ Score: 1.0
+$> Observation (1) :put-down e
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 2
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+$> Observation (2) :unstack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+Addind goal(and (on b a)  (ontable e)  (clear d) )
+Addind goal(and (on d c)  (ontable e)  (on c b) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (3) :put-down b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (4) :unstack a d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (5) :put-down a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.33333334
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (6) :pick-up b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2857143
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (7) :stack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.25
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (8) :pick-up c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+Addind goal(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (9) :stack c b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (10) :pick-up d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.18181819
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 1.0
+$> Observation (11) :stack d c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.16666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.33333334
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.33333334
+$$$$####> Convergence Percent (%): 0.33333334
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 3
+$$$$####> Number of Atomic Goals in Real Goal: 5
+$$$$####> Largest Number of Atomic Goals in Candidates: 3
+$$$$####> Last candidate expantion was at ObservationNumber : 9.0
+$$$$####> Total Observed Actions: 12.0
+$$$$####> Total Number of Calls to Planner: 136.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: ontable c, ontable d, on b a, ontable f, clear e, on e f, on a d, handempty, clear c, clear b
+#> Real Goal: (and (on d c)  (on b a)  (ontable e)  (on c b)  (clear d) )
+observation:[unstack e f, put-down e, unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c]
+$> Observation (0) :unstack e f
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 1
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack e c, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [put-down e, unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 1
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [put-down e]
+	 @@@@ Score: 1.0
+$> Observation (1) :put-down e
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 2
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+$> Observation (2) :unstack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+Addind goal(and (on b a)  (ontable e)  (clear d) )
+Addind goal(and (on d c)  (ontable e)  (on c b) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (3) :put-down b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (4) :unstack a d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: ontable c, ontable d, on b a, ontable f, clear e, on e f, on a d, handempty, clear c, clear b
+#> Real Goal: (and (on d c)  (on b a)  (ontable e)  (on c b)  (clear d) )
+observation:[unstack e f, put-down e, unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c]
+$> Observation (0) :unstack e f
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 1
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack e c, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [put-down e, unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 1
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [put-down e]
+	 @@@@ Score: 1.0
+$> Observation (1) :put-down e
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 2
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+$> Observation (2) :unstack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+Addind goal(and (on b a)  (ontable e)  (clear d) )
+Addind goal(and (on d c)  (ontable e)  (on c b) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (3) :put-down b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (4) :unstack a d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (5) :put-down a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.33333334
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (6) :pick-up b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2857143
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (7) :stack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.25
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (8) :pick-up c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+Addind goal(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (9) :stack c b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (10) :pick-up d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.18181819
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 1.0
+$> Observation (11) :stack d c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.16666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.33333334
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.33333334
+$$$$####> Convergence Percent (%): 0.33333334
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 3
+$$$$####> Number of Atomic Goals in Real Goal: 5
+$$$$####> Largest Number of Atomic Goals in Candidates: 3
+$$$$####> Last candidate expantion was at ObservationNumber : 9.0
+$$$$####> Total Observed Actions: 12.0
+$$$$####> Total Number of Calls to Planner: 136.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: ontable c, ontable d, on b a, ontable f, clear e, on e f, on a d, handempty, clear c, clear b
+#> Real Goal: (and (on d c)  (on b a)  (ontable e)  (on c b)  (clear d) )
+observation:[unstack e f, put-down e, unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c]
+$> Observation (0) :unstack e f
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 1
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack e c, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [put-down e, unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 1
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [put-down e]
+	 @@@@ Score: 1.0
+$> Observation (1) :put-down e
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 2
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+$> Observation (2) :unstack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+Addind goal(and (on b a)  (ontable e)  (clear d) )
+Addind goal(and (on d c)  (ontable e)  (on c b) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (3) :put-down b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (4) :unstack a d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (5) :put-down a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.33333334
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (6) :pick-up b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2857143
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (7) :stack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.25
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (8) :pick-up c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+Addind goal(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (9) :stack c b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (10) :pick-up d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.18181819
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 1.0
+$> Observation (11) :stack d c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.16666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.33333334
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.33333334
+$$$$####> Convergence Percent (%): 0.33333334
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 3
+$$$$####> Number of Atomic Goals in Real Goal: 5
+$$$$####> Largest Number of Atomic Goals in Candidates: 3
+$$$$####> Last candidate expantion was at ObservationNumber : 9.0
+$$$$####> Total Observed Actions: 12.0
+$$$$####> Total Number of Calls to Planner: 136.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+stat file name/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/all_stats_file.txt
+#> Init status: ontable c, ontable d, on b a, ontable f, clear e, on e f, on a d, handempty, clear c, clear b
+#> Real Goal: (and (on d c)  (on b a)  (ontable e)  (on c b)  (clear d) )
+observation:[unstack e f, put-down e, unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c]
+$> Observation (0) :unstack e f
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 1
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack e c, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [put-down e, unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 1
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [put-down e]
+	 @@@@ Score: 1.0
+$> Observation (1) :put-down e
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 2
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+$> Observation (2) :unstack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+Addind goal(and (on b a)  (ontable e)  (clear d) )
+Addind goal(and (on d c)  (ontable e)  (on c b) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (3) :put-down b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (4) :unstack a d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (5) :put-down a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.33333334
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (6) :pick-up b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2857143
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (7) :stack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.25
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (8) :pick-up c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+Addind goal(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (9) :stack c b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (10) :pick-up d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.18181819
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 1.0
+$> Observation (11) :stack d c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.16666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.33333334
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.33333334
+$$$$####> Convergence Percent (%): 0.33333334
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 3
+$$$$####> Number of Atomic Goals in Real Goal: 5
+$$$$####> Largest Number of Atomic Goals in Candidates: 3
+$$$$####> Last candidate expantion was at ObservationNumber : 9.0
+$$$$####> Total Observed Actions: 12.0
+$$$$####> Total Number of Calls to Planner: 136.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+stat file name/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/all_stats_file.txt
+#> Init status: ontable c, ontable d, on b a, ontable f, clear e, on e f, on a d, handempty, clear c, clear b
+#> Real Goal: (and (on d c)  (on b a)  (ontable e)  (on c b)  (clear d) )
+observation:[unstack e f, put-down e, unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c]
+$> Observation (0) :unstack e f
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 1
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack e c, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [put-down e, unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 1
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [put-down e]
+	 @@@@ Score: 1.0
+$> Observation (1) :put-down e
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 2
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+$> Observation (2) :unstack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+Addind goal(and (on b a)  (ontable e)  (clear d) )
+Addind goal(and (on d c)  (ontable e)  (on c b) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (3) :put-down b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (4) :unstack a d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (5) :put-down a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.33333334
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (6) :pick-up b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2857143
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (7) :stack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.25
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (8) :pick-up c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+Addind goal(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (9) :stack c b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (10) :pick-up d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.18181819
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 1.0
+$> Observation (11) :stack d c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.16666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.33333334
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.33333334
+$$$$####> Convergence Percent (%): 0.33333334
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 3
+$$$$####> Number of Atomic Goals in Real Goal: 5
+$$$$####> Largest Number of Atomic Goals in Candidates: 3
+$$$$####> Last candidate expantion was at ObservationNumber : 9.0
+$$$$####> Total Observed Actions: 12.0
+$$$$####> Total Number of Calls to Planner: 136.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+stat file name/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/all_stats_file.txt
+#> Init status: ontable c, ontable d, on b a, ontable f, clear e, on e f, on a d, handempty, clear c, clear b
+#> Real Goal: (and (on d c)  (on b a)  (ontable e)  (on c b)  (clear d) )
+observation:[unstack e f, put-down e, unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c]
+$> Observation (0) :unstack e f
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 1
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack e c, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [put-down e, unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 1
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [put-down e]
+	 @@@@ Score: 1.0
+$> Observation (1) :put-down e
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [unstack b a, stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 2
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+$> Observation (2) :unstack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+Addind goal(and (on b a)  (ontable e)  (clear d) )
+Addind goal(and (on d c)  (ontable e)  (on c b) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 3
+	 # mPlus: 7
+	 # Ideal Plan of G from current state: 7
+	 # [stack b f, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (3) :put-down b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [unstack a d, put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 4
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (4) :unstack a d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 5
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [put-down a, pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [put-down a, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (5) :put-down a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.33333334
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 6
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up b, stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 6
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (6) :pick-up b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2857143
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 7
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack b a]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 7
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [stack b f, pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (7) :stack b a
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.25
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 8
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 8
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [pick-up c, stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+$> Observation (8) :pick-up c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+Addind goal(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.22222222
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 9
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8888889
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 9
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [stack c b, pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (9) :stack c b
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.2
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 10
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 10
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [pick-up d, stack d c]
+	 @@@@ Score: 1.0
+$> Observation (10) :pick-up d
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.18181819
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d e]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 11
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [stack d c]
+	 @@@@ Score: 1.0
+$> Observation (11) :stack d c
+
+	 # Goal:(and (on b a)  (clear d) )
+	 # Ideal Plan of G from initial state: 6
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on d c)  (on c b) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack b a, stack b e, pick-up c, stack c b, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (ontable e) )
+	 # Ideal Plan of G from initial state: 2
+	 # [unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.16666667
+
+	 # Goal:(and (on b a)  (ontable e)  (clear d) )
+	 # Ideal Plan of G from initial state: 8
+	 # [unstack e f, put-down e, unstack b a, stack b f, unstack a d, put-down a, unstack b f, stack b a]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on d c)  (ontable e)  (on c b) )
+	 # Ideal Plan of G from initial state: 10
+	 # [unstack b a, put-down b, pick-up c, stack c b, unstack e f, put-down e, unstack a d, put-down a, pick-up d, stack d c]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.8333333
+
+	 # Goal:(and (on b a)  (on d c)  (ontable e)  (on c b)  (clear d) )
+	 # Ideal Plan of G from initial state: 12
+	 # [unstack b a, put-down b, unstack a d, put-down a, pick-up b, stack b a, pick-up c, stack c b, pick-up d, stack d c, unstack e f, put-down e]
+	 # mMinus: 12
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.33333334
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.33333334
+$$$$####> Convergence Percent (%): 0.33333334
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 3
+$$$$####> Number of Atomic Goals in Real Goal: 5
+$$$$####> Largest Number of Atomic Goals in Candidates: 3
+$$$$####> Last candidate expantion was at ObservationNumber : 9.0
+$$$$####> Total Observed Actions: 12.0
+$$$$####> Total Number of Calls to Planner: 136.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'

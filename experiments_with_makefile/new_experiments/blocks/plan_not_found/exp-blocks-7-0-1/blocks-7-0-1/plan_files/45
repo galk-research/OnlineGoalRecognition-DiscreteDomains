@@ -1,0 +1,11 @@
+put-down b
+unstack a g
+put-down a
+pick-up d
+stack d b
+pick-up g
+stack g d
+pick-up a
+stack a g
+pick-up c
+stack c f

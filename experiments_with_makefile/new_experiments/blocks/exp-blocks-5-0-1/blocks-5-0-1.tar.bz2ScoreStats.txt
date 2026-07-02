@@ -1,0 +1,10 @@
+(and (ontable c)  (on d c)  (ontable e)  (on b d)  (clear a) )
+[unstack c e, put-down c, pick-up d, stack d c, unstack e b, unstack e b, put-down e, unstack b a, stack b d]
+(and (ontable c)  (on d c) ),(and (on a e)  (clear b) ),(and (ontable e)  (clear a) ),(and (on b d) ),(and (ontable c)  (on d c)  (on a e)  (clear b) ),(and (ontable c)  (on d c)  (ontable e)  (clear a) ),(and (ontable c)  (on d c)  (on b d) ),
+1.0 1.0 1.0 1.0 0.8 0.8 0.6666667 0.5714286 0.5 
+1.0 1.0 0.8 0.8 0.8 0.8 0.8 0.8 0.8 
+1.0 1.0 0.71428573 0.71428573 0.71428573 0.71428573 0.71428573 0.71428573 0.625 
+1.0 1.0 0.75 0.75 0.75 0.75 0.75 0.75 0.75 
+0.0 0.0 0.0 0.0 0.0 1.0 1.0 1.0 1.0 
+0.0 0.0 0.0 0.0 0.0 1.0 1.0 1.0 0.875 
+0.0 0.0 0.0 0.0 0.0 1.0 1.0 1.0 1.0 

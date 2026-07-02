@@ -1,0 +1,4 @@
+unstack b g
+stack b a
+pick-up g
+stack g f

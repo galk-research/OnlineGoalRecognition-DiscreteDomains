@@ -1,0 +1,3100 @@
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World
+hii
+4
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+here
+here here
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: at c2 l6, empty-ferry, at c4 l4, at-ferry l8, at c7 l6, at c8 l6, at c5 l5, at c3 l3, at c6 l1, at c0 l8, at c1 l8
+#> Real Goal: (and (at c0 l5)  (at c1 l1) )
+observation:[board c0 l8, sail l8 l5, debark c0 l5, sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+$> Observation (0) :board c0 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 1
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l5, debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.6666667
+$> Observation (1) :sail l8 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 2
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l8, debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (2) :debark c0 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (3) :sail l5 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+Addind goal(and (at c0 l5)  (at c1 l1) )
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (4) :board c1 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (5) :sail l8 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (6) :debark c1 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.5714286
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.5714286
+$$$$####> Convergence Percent (%): 0.5714286
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 5
+$$$$####> Number of Atomic Goals in Real Goal: 2
+$$$$####> Largest Number of Atomic Goals in Candidates: 2
+$$$$####> Last candidate expantion was at ObservationNumber : 4.0
+$$$$####> Total Observed Actions: 7.0
+$$$$####> Total Number of Calls to Planner: 88.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World
+hii
+4
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+here
+here here
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: at c2 l6, empty-ferry, at c4 l4, at-ferry l8, at c7 l6, at c8 l6, at c5 l5, at c3 l3, at c6 l1, at c0 l8, at c1 l8
+#> Real Goal: (and (at c0 l5)  (at c1 l1) )
+observation:[board c0 l8, sail l8 l5, debark c0 l5, sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+$> Observation (0) :board c0 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 1
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l5, debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.6666667
+$> Observation (1) :sail l8 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 2
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l8, debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (2) :debark c0 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (3) :sail l5 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+Addind goal(and (at c0 l5)  (at c1 l1) )
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (4) :board c1 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (5) :sail l8 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (6) :debark c1 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.5714286
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.5714286
+$$$$####> Convergence Percent (%): 0.5714286
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 5
+$$$$####> Number of Atomic Goals in Real Goal: 2
+$$$$####> Largest Number of Atomic Goals in Candidates: 2
+$$$$####> Last candidate expantion was at ObservationNumber : 4.0
+$$$$####> Total Observed Actions: 7.0
+$$$$####> Total Number of Calls to Planner: 88.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: at c2 l6, empty-ferry, at c4 l4, at-ferry l8, at c7 l6, at c8 l6, at c5 l5, at c3 l3, at c6 l1, at c0 l8, at c1 l8
+#> Real Goal: (and (at c0 l5)  (at c1 l1) )
+observation:[board c0 l8, sail l8 l5, debark c0 l5, sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+$> Observation (0) :board c0 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 1
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l5, debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.6666667
+$> Observation (1) :sail l8 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 2
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l8, debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (2) :debark c0 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (3) :sail l5 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+Addind goal(and (at c0 l5)  (at c1 l1) )
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (4) :board c1 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (5) :sail l8 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (6) :debark c1 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.5714286
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.5714286
+$$$$####> Convergence Percent (%): 0.5714286
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 5
+$$$$####> Number of Atomic Goals in Real Goal: 2
+$$$$####> Largest Number of Atomic Goals in Candidates: 2
+$$$$####> Last candidate expantion was at ObservationNumber : 4.0
+$$$$####> Total Observed Actions: 7.0
+$$$$####> Total Number of Calls to Planner: 88.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: at c2 l6, empty-ferry, at c4 l4, at-ferry l8, at c7 l6, at c8 l6, at c5 l5, at c3 l3, at c6 l1, at c0 l8, at c1 l8
+#> Real Goal: (and (at c0 l5)  (at c1 l1) )
+observation:[board c0 l8, sail l8 l5, debark c0 l5, sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+$> Observation (0) :board c0 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 1
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l5, debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.6666667
+$> Observation (1) :sail l8 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 2
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l8, debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (2) :debark c0 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (3) :sail l5 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+Addind goal(and (at c0 l5)  (at c1 l1) )
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (4) :board c1 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (5) :sail l8 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (6) :debark c1 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.5714286
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.5714286
+$$$$####> Convergence Percent (%): 0.5714286
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 5
+$$$$####> Number of Atomic Goals in Real Goal: 2
+$$$$####> Largest Number of Atomic Goals in Candidates: 2
+$$$$####> Last candidate expantion was at ObservationNumber : 4.0
+$$$$####> Total Observed Actions: 7.0
+$$$$####> Total Number of Calls to Planner: 88.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+stat file name/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/all_stats_file.txt
+#> Init status: at c2 l6, empty-ferry, at c4 l4, at-ferry l8, at c7 l6, at c8 l6, at c5 l5, at c3 l3, at c6 l1, at c0 l8, at c1 l8
+#> Real Goal: (and (at c0 l5)  (at c1 l1) )
+observation:[board c0 l8, sail l8 l5, debark c0 l5, sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+$> Observation (0) :board c0 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 1
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l5, debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.6666667
+$> Observation (1) :sail l8 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 2
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l8, debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (2) :debark c0 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (3) :sail l5 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+Addind goal(and (at c0 l5)  (at c1 l1) )
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (4) :board c1 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (5) :sail l8 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (6) :debark c1 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.5714286
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.5714286
+$$$$####> Convergence Percent (%): 0.5714286
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 5
+$$$$####> Number of Atomic Goals in Real Goal: 2
+$$$$####> Largest Number of Atomic Goals in Candidates: 2
+$$$$####> Last candidate expantion was at ObservationNumber : 4.0
+$$$$####> Total Observed Actions: 7.0
+$$$$####> Total Number of Calls to Planner: 88.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+stat file name/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/all_stats_file.txt
+#> Init status: at c2 l6, empty-ferry, at c4 l4, at-ferry l8, at c7 l6, at c8 l6, at c5 l5, at c3 l3, at c6 l1, at c0 l8, at c1 l8
+#> Real Goal: (and (at c0 l5)  (at c1 l1) )
+observation:[board c0 l8, sail l8 l5, debark c0 l5, sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+$> Observation (0) :board c0 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 1
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l5, debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.6666667
+$> Observation (1) :sail l8 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 2
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l8, debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (2) :debark c0 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (3) :sail l5 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+Addind goal(and (at c0 l5)  (at c1 l1) )
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (4) :board c1 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (5) :sail l8 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (6) :debark c1 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.5714286
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.5714286
+$$$$####> Convergence Percent (%): 0.5714286
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 5
+$$$$####> Number of Atomic Goals in Real Goal: 2
+$$$$####> Largest Number of Atomic Goals in Candidates: 2
+$$$$####> Last candidate expantion was at ObservationNumber : 4.0
+$$$$####> Total Observed Actions: 7.0
+$$$$####> Total Number of Calls to Planner: 88.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+stat file name/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/all_stats_file.txt
+#> Init status: at c2 l6, empty-ferry, at c4 l4, at-ferry l8, at c7 l6, at c8 l6, at c5 l5, at c3 l3, at c6 l1, at c0 l8, at c1 l8
+#> Real Goal: (and (at c0 l5)  (at c1 l1) )
+observation:[board c0 l8, sail l8 l5, debark c0 l5, sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+$> Observation (0) :board c0 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 1
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l5, debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 1
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.6666667
+$> Observation (1) :sail l8 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 2
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c0 l5]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l8, debark c0 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 2
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l5 l6, debark c0 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (2) :debark c0 l5
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 3
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l8, board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5714286
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 3
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l5 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5714286
+$> Observation (3) :sail l5 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+Addind goal(and (at c0 l5)  (at c1 l1) )
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 4
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 4
+	 # mPlus: 3
+	 # Ideal Plan of G from current state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (4) :board c1 l8
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.6
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 5
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l8 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.4
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 5
+	 # mPlus: 2
+	 # Ideal Plan of G from current state: 2
+	 # [sail l8 l1, debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (5) :sail l8 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 6
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [sail l1 l6, debark c1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 6
+	 # mPlus: 1
+	 # Ideal Plan of G from current state: 1
+	 # [debark c1 l1]
+	 @@@@ Score: 1.0
+$> Observation (6) :debark c1 l1
+
+	 # Goal:(and (at c0 l5) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c8 l5) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c8 l6, sail l6 l5, debark c8 l5]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c1 l1) )
+	 # Ideal Plan of G from initial state: 3
+	 # [board c1 l8, sail l8 l1, debark c1 l1]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 0.42857143
+
+	 # Goal:(and (at c7 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c7 l6, sail l6 l10, debark c7 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c2 l10) )
+	 # Ideal Plan of G from initial state: 4
+	 # [sail l8 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 # mMinus: 7
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [sail l1 l6, board c2 l6, sail l6 l10, debark c2 l10]
+	 @@@@ Score: 0.36363637
+
+	 # Goal:(and (at c0 l5)  (at c1 l1) )
+	 # Ideal Plan of G from initial state: 7
+	 # [board c1 l8, sail l8 l1, debark c1 l1, sail l1 l8, board c0 l8, sail l8 l5, debark c0 l5]
+	 # mMinus: 7
+	 # mPlus: 0
+	 # Ideal Plan of G from current state: 0
+	 # []
+	 @@@@ Score: 1.0
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ScoreStats.txt
+States are saved to file:/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2ProbStats.txt
+
+$$$$####> Top First Ranked Percent(only 1) (%): 0.5714286
+
+$$$$####> Top Ranked Percent (among the top) (%): 0.5714286
+$$$$####> Convergence Percent (%): 0.5714286
+$$$$####> Top Ranked First times (only one): 4.0
+$$$$####> Top Ranked First times (amoung the top): 4.0
+$$$$####> Total Candidate Goals: 6
+$$$$####> Number of Atomic Goals: 5
+$$$$####> Number of Atomic Goals in Real Goal: 2
+$$$$####> Largest Number of Atomic Goals in Candidates: 2
+$$$$####> Last candidate expantion was at ObservationNumber : 4.0
+$$$$####> Total Observed Actions: 7.0
+$$$$####> Total Number of Calls to Planner: 88.0
+Successfully appended to the file.
+Done!
+make[2]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains'

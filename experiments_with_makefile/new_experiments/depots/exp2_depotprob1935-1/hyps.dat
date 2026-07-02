@@ -1,0 +1,5 @@
+(on crate1 pallet2)
+(on crate0 crate1)
+(on crate3 crate2)
+(on crate2 pallet0)
+(on crate4 pallet1)

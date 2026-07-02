@@ -1,0 +1,1947 @@
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1'
+make[2]: Leaving directory '/home/yifat'
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar Block-World
+hii
+4
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+here
+here here
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: at crate8 distributor0, at crate5 distributor0, at truck0 distributor0, on crate6 crate5, on crate2 pallet0, on crate8 crate3, on crate0 pallet4, clear crate7, at hoist2 distributor1, at crate2 depot0, at crate4 distributor1, on crate5 crate1, at pallet1 distributor0, clear crate9, at crate7 distributor1, at pallet5 distributor0, at pallet4 distributor0, at hoist1 distributor0, clear crate2, clear crate0, on crate3 pallet5, on crate1 pallet1, on crate4 pallet3, at hoist0 depot0, clear crate6, at crate1 distributor0, available hoist2, on crate9 pallet2, clear crate8, on crate7 crate4, available hoist0, at crate9 distributor1, at pallet0 depot0, at truck1 distributor0, at crate0 distributor0, available hoist1, at pallet3 distributor1, at pallet2 distributor1, at crate6 distributor0, at crate3 distributor0
+#> Real Goal: (and (on crate1 crate0)  (on crate9 pallet0) )
+observation:[drive truck0 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist1 crate6 crate5 distributor0, lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0, load hoist2 crate9 truck0 distributor1, drive truck0 distributor1 depot0, load hoist0 crate2 truck0 depot0, unload hoist0 crate9 truck0 depot0, drop hoist0 crate9 pallet0 depot0]
+$> Observation (0) :drive truck0 distributor0 distributor1
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 1
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 1
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.85714287
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+$> Observation (1) :lift hoist0 crate2 pallet0 depot0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+Addind goal(and (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 18
+	 # Ideal Plan of G from current state: 18
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 depot0, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+$> Observation (2) :lift hoist1 crate6 crate5 distributor0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+Addind goal(and (on crate6 pallet2)  (on crate0 pallet3)  (on crate9 pallet0) )
+Addind goal(and (on crate1 crate0)  (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar Block-World
+hii
+4
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+here
+here here
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: at crate8 distributor0, at crate5 distributor0, at truck0 distributor0, on crate6 crate5, on crate2 pallet0, on crate8 crate3, on crate0 pallet4, clear crate7, at hoist2 distributor1, at crate2 depot0, at crate4 distributor1, on crate5 crate1, at pallet1 distributor0, clear crate9, at crate7 distributor1, at pallet5 distributor0, at pallet4 distributor0, at hoist1 distributor0, clear crate2, clear crate0, on crate3 pallet5, on crate1 pallet1, on crate4 pallet3, at hoist0 depot0, clear crate6, at crate1 distributor0, available hoist2, on crate9 pallet2, clear crate8, on crate7 crate4, available hoist0, at crate9 distributor1, at pallet0 depot0, at truck1 distributor0, at crate0 distributor0, available hoist1, at pallet3 distributor1, at pallet2 distributor1, at crate6 distributor0, at crate3 distributor0
+#> Real Goal: (and (on crate1 crate0)  (on crate9 pallet0) )
+observation:[drive truck0 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist1 crate6 crate5 distributor0, lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0, load hoist2 crate9 truck0 distributor1, drive truck0 distributor1 depot0, load hoist0 crate2 truck0 depot0, unload hoist0 crate9 truck0 depot0, drop hoist0 crate9 pallet0 depot0]
+$> Observation (0) :drive truck0 distributor0 distributor1
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 1
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 1
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.85714287
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+$> Observation (1) :lift hoist0 crate2 pallet0 depot0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+Addind goal(and (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 18
+	 # Ideal Plan of G from current state: 18
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 depot0, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+$> Observation (2) :lift hoist1 crate6 crate5 distributor0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+Addind goal(and (on crate6 pallet2)  (on crate0 pallet3)  (on crate9 pallet0) )
+Addind goal(and (on crate1 crate0)  (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: at crate8 distributor0, at crate5 distributor0, at truck0 distributor0, on crate6 crate5, on crate2 pallet0, on crate8 crate3, on crate0 pallet4, clear crate7, at hoist2 distributor1, at crate2 depot0, at crate4 distributor1, on crate5 crate1, at pallet1 distributor0, clear crate9, at crate7 distributor1, at pallet5 distributor0, at pallet4 distributor0, at hoist1 distributor0, clear crate2, clear crate0, on crate3 pallet5, on crate1 pallet1, on crate4 pallet3, at hoist0 depot0, clear crate6, at crate1 distributor0, available hoist2, on crate9 pallet2, clear crate8, on crate7 crate4, available hoist0, at crate9 distributor1, at pallet0 depot0, at truck1 distributor0, at crate0 distributor0, available hoist1, at pallet3 distributor1, at pallet2 distributor1, at crate6 distributor0, at crate3 distributor0
+#> Real Goal: (and (on crate1 crate0)  (on crate9 pallet0) )
+observation:[drive truck0 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist1 crate6 crate5 distributor0, lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0, load hoist2 crate9 truck0 distributor1, drive truck0 distributor1 depot0, load hoist0 crate2 truck0 depot0, unload hoist0 crate9 truck0 depot0, drop hoist0 crate9 pallet0 depot0]
+$> Observation (0) :drive truck0 distributor0 distributor1
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 1
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 1
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.85714287
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+$> Observation (1) :lift hoist0 crate2 pallet0 depot0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+Addind goal(and (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 18
+	 # Ideal Plan of G from current state: 18
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 depot0, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+$> Observation (2) :lift hoist1 crate6 crate5 distributor0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+Addind goal(and (on crate6 pallet2)  (on crate0 pallet3)  (on crate9 pallet0) )
+Addind goal(and (on crate1 crate0)  (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+#> Init status: at crate8 distributor0, at crate5 distributor0, at truck0 distributor0, on crate6 crate5, on crate2 pallet0, on crate8 crate3, on crate0 pallet4, clear crate7, at hoist2 distributor1, at crate2 depot0, at crate4 distributor1, on crate5 crate1, at pallet1 distributor0, clear crate9, at crate7 distributor1, at pallet5 distributor0, at pallet4 distributor0, at hoist1 distributor0, clear crate2, clear crate0, on crate3 pallet5, on crate1 pallet1, on crate4 pallet3, at hoist0 depot0, clear crate6, at crate1 distributor0, available hoist2, on crate9 pallet2, clear crate8, on crate7 crate4, available hoist0, at crate9 distributor1, at pallet0 depot0, at truck1 distributor0, at crate0 distributor0, available hoist1, at pallet3 distributor1, at pallet2 distributor1, at crate6 distributor0, at crate3 distributor0
+#> Real Goal: (and (on crate1 crate0)  (on crate9 pallet0) )
+observation:[drive truck0 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist1 crate6 crate5 distributor0, lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0, load hoist2 crate9 truck0 distributor1, drive truck0 distributor1 depot0, load hoist0 crate2 truck0 depot0, unload hoist0 crate9 truck0 depot0, drop hoist0 crate9 pallet0 depot0]
+$> Observation (0) :drive truck0 distributor0 distributor1
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 1
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 1
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.85714287
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+$> Observation (1) :lift hoist0 crate2 pallet0 depot0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+Addind goal(and (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 18
+	 # Ideal Plan of G from current state: 18
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 depot0, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+$> Observation (2) :lift hoist1 crate6 crate5 distributor0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+Addind goal(and (on crate6 pallet2)  (on crate0 pallet3)  (on crate9 pallet0) )
+Addind goal(and (on crate1 crate0)  (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+stat file name/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/all_stats_file.txt
+#> Init status: at crate8 distributor0, at crate5 distributor0, at truck0 distributor0, on crate6 crate5, on crate2 pallet0, on crate8 crate3, on crate0 pallet4, clear crate7, at hoist2 distributor1, at crate2 depot0, at crate4 distributor1, on crate5 crate1, at pallet1 distributor0, clear crate9, at crate7 distributor1, at pallet5 distributor0, at pallet4 distributor0, at hoist1 distributor0, clear crate2, clear crate0, on crate3 pallet5, on crate1 pallet1, on crate4 pallet3, at hoist0 depot0, clear crate6, at crate1 distributor0, available hoist2, on crate9 pallet2, clear crate8, on crate7 crate4, available hoist0, at crate9 distributor1, at pallet0 depot0, at truck1 distributor0, at crate0 distributor0, available hoist1, at pallet3 distributor1, at pallet2 distributor1, at crate6 distributor0, at crate3 distributor0
+#> Real Goal: (and (on crate1 crate0)  (on crate9 pallet0) )
+observation:[drive truck0 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist1 crate6 crate5 distributor0, lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0, load hoist2 crate9 truck0 distributor1, drive truck0 distributor1 depot0, load hoist0 crate2 truck0 depot0, unload hoist0 crate9 truck0 depot0, drop hoist0 crate9 pallet0 depot0]
+$> Observation (0) :drive truck0 distributor0 distributor1
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 1
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 1
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.85714287
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+$> Observation (1) :lift hoist0 crate2 pallet0 depot0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+Addind goal(and (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 18
+	 # Ideal Plan of G from current state: 18
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 depot0, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+$> Observation (2) :lift hoist1 crate6 crate5 distributor0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+Addind goal(and (on crate6 pallet2)  (on crate0 pallet3)  (on crate9 pallet0) )
+Addind goal(and (on crate1 crate0)  (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+stat file name/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/all_stats_file.txt
+#> Init status: at crate8 distributor0, at crate5 distributor0, at truck0 distributor0, on crate6 crate5, on crate2 pallet0, on crate8 crate3, on crate0 pallet4, clear crate7, at hoist2 distributor1, at crate2 depot0, at crate4 distributor1, on crate5 crate1, at pallet1 distributor0, clear crate9, at crate7 distributor1, at pallet5 distributor0, at pallet4 distributor0, at hoist1 distributor0, clear crate2, clear crate0, on crate3 pallet5, on crate1 pallet1, on crate4 pallet3, at hoist0 depot0, clear crate6, at crate1 distributor0, available hoist2, on crate9 pallet2, clear crate8, on crate7 crate4, available hoist0, at crate9 distributor1, at pallet0 depot0, at truck1 distributor0, at crate0 distributor0, available hoist1, at pallet3 distributor1, at pallet2 distributor1, at crate6 distributor0, at crate3 distributor0
+#> Real Goal: (and (on crate1 crate0)  (on crate9 pallet0) )
+observation:[drive truck0 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist1 crate6 crate5 distributor0, lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0, load hoist2 crate9 truck0 distributor1, drive truck0 distributor1 depot0, load hoist0 crate2 truck0 depot0, unload hoist0 crate9 truck0 depot0, drop hoist0 crate9 pallet0 depot0]
+$> Observation (0) :drive truck0 distributor0 distributor1
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 1
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 1
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.85714287
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+$> Observation (1) :lift hoist0 crate2 pallet0 depot0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+Addind goal(and (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 18
+	 # Ideal Plan of G from current state: 18
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 depot0, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+$> Observation (2) :lift hoist1 crate6 crate5 distributor0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+Addind goal(and (on crate6 pallet2)  (on crate0 pallet3)  (on crate9 pallet0) )
+Addind goal(and (on crate1 crate0)  (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+make[2]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1'
+java -cp "bin:lib/jgrapht-jdk1.6.jar:lib/planning-landmarks3.0.jar:lib/planning-utils3.1.jar:lib/planning-utils3.2.jar" experiments.MultipleGoals /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar Block-World
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+file's folder: /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+tar
+-jxvf
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/depotprob4321-1.tar.bz2
+-C
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1
+Parsed Domain file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/domain.pddl successfully
+Parsed Problem file /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/templateInitial.pddl successfully
+
+Grounding...
+Grounding complete!
+
+stat file name/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp2_depotprob4321-1/all_stats_file.txt
+#> Init status: at crate8 distributor0, at crate5 distributor0, at truck0 distributor0, on crate6 crate5, on crate2 pallet0, on crate8 crate3, on crate0 pallet4, clear crate7, at hoist2 distributor1, at crate2 depot0, at crate4 distributor1, on crate5 crate1, at pallet1 distributor0, clear crate9, at crate7 distributor1, at pallet5 distributor0, at pallet4 distributor0, at hoist1 distributor0, clear crate2, clear crate0, on crate3 pallet5, on crate1 pallet1, on crate4 pallet3, at hoist0 depot0, clear crate6, at crate1 distributor0, available hoist2, on crate9 pallet2, clear crate8, on crate7 crate4, available hoist0, at crate9 distributor1, at pallet0 depot0, at truck1 distributor0, at crate0 distributor0, available hoist1, at pallet3 distributor1, at pallet2 distributor1, at crate6 distributor0, at crate3 distributor0
+#> Real Goal: (and (on crate1 crate0)  (on crate9 pallet0) )
+observation:[drive truck0 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist1 crate6 crate5 distributor0, lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0, load hoist2 crate9 truck0 distributor1, drive truck0 distributor1 depot0, load hoist0 crate2 truck0 depot0, unload hoist0 crate9 truck0 depot0, drop hoist0 crate9 pallet0 depot0]
+$> Observation (0) :drive truck0 distributor0 distributor1
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 1
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.8
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 1
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 1
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.85714287
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 1
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+$> Observation (1) :lift hoist0 crate2 pallet0 depot0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+Addind goal(and (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 2
+	 # mPlus: 4
+	 # Ideal Plan of G from current state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.6666667
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor1 distributor0, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 2
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 9
+	 # Ideal Plan of G from current state: 9
+	 # [lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 2
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.9
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 2
+	 # mPlus: 18
+	 # Ideal Plan of G from current state: 18
+	 # [lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 depot0, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 1.0
+$> Observation (2) :lift hoist1 crate6 crate5 distributor0
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094
+Addind goal(and (on crate6 pallet2)  (on crate0 pallet3)  (on crate9 pallet0) )
+Addind goal(and (on crate1 crate0)  (on crate0 pallet3)  (on crate9 pallet0) )
+
+	 # Goal:(and (on crate8 pallet4) )
+	 # Ideal Plan of G from initial state: 4
+	 # [lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist1 crate0 pallet4 distributor0, load hoist1 crate0 truck1 distributor0, lift hoist1 crate8 crate3 distributor0, drop hoist1 crate8 pallet4 distributor0]
+	 @@@@ Score: 0.5
+
+	 # Goal:(and (on crate6 pallet2) )
+	 # Ideal Plan of G from initial state: 7
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist1 crate6 crate5 distributor0, load hoist1 crate6 truck0 distributor0, drop hoist2 crate9 crate7 distributor1, drive truck0 distributor0 distributor1, unload hoist2 crate6 truck0 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 # mMinus: 3
+	 # mPlus: 6
+	 # Ideal Plan of G from current state: 6
+	 # [load hoist1 crate6 truck1 distributor0, lift hoist2 crate9 pallet2 distributor1, drive truck1 distributor0 distributor1, drop hoist2 crate9 crate7 distributor1, unload hoist2 crate6 truck1 distributor1, drop hoist2 crate6 pallet2 distributor1]
+	 @@@@ Score: 0.7777778
+
+	 # Goal:(and (on crate1 crate0) )
+	 # Ideal Plan of G from initial state: 6
+	 # [lift hoist1 crate6 crate5 distributor0, drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 # mMinus: 3
+	 # mPlus: 5
+	 # Ideal Plan of G from current state: 5
+	 # [drop hoist1 crate6 crate8 distributor0, lift hoist1 crate5 crate1 distributor0, drop hoist1 crate5 crate6 distributor0, lift hoist1 crate1 pallet1 distributor0, drop hoist1 crate1 crate0 distributor0]
+	 @@@@ Score: 0.75
+
+	 # Goal:(and (on crate0 pallet3) )
+	 # Ideal Plan of G from initial state: 10
+	 # [drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, lift hoist2 crate7 crate4 distributor1, load hoist1 crate0 truck1 distributor0, load hoist2 crate7 truck0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 10
+	 # Ideal Plan of G from current state: 10
+	 # [drop hoist1 crate6 crate5 distributor0, lift hoist2 crate7 crate4 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate7 truck0 distributor1, load hoist1 crate0 truck1 distributor0, lift hoist2 crate4 pallet3 distributor1, drive truck1 distributor0 distributor1, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.7692308
+
+	 # Goal:(and (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 9
+	 # [drive truck1 distributor0 distributor1, lift hoist0 crate2 pallet0 depot0, lift hoist2 crate9 pallet2 distributor1, drive truck0 distributor0 depot0, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 # mMinus: 3
+	 # mPlus: 8
+	 # Ideal Plan of G from current state: 8
+	 # [drive truck1 distributor0 distributor1, drive truck0 distributor1 depot0, lift hoist2 crate9 pallet2 distributor1, load hoist0 crate2 truck0 depot0, load hoist2 crate9 truck1 distributor1, drive truck1 distributor1 depot0, unload hoist0 crate9 truck1 depot0, drop hoist0 crate9 pallet0 depot0]
+	 @@@@ Score: 0.8181818
+
+	 # Goal:(and (on crate0 pallet3)  (on crate9 pallet0) )
+	 # Ideal Plan of G from initial state: 20
+	 # [lift hoist2 crate9 pallet2 distributor1, lift hoist0 crate2 pallet0 depot0, drive truck1 distributor0 depot0, drive truck0 distributor0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist2 crate9 truck0 distributor1, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 # mMinus: 3
+	 # mPlus: 19
+	 # Ideal Plan of G from current state: 19
+	 # [lift hoist2 crate9 pallet2 distributor1, drop hoist1 crate6 crate5 distributor0, drive truck1 distributor0 depot0, load hoist2 crate9 truck0 distributor1, lift hoist1 crate0 pallet4 distributor0, load hoist0 crate2 truck1 depot0, drive truck0 distributor1 depot0, lift hoist2 crate7 crate4 distributor1, drive truck1 depot0 distributor0, drop hoist2 crate7 pallet2 distributor1, unload hoist0 crate9 truck0 depot0, load hoist1 crate0 truck1 distributor0, drive truck0 depot0 distributor1, drive truck1 distributor0 distributor1, lift hoist2 crate4 pallet3 distributor1, drop hoist0 crate9 pallet0 depot0, load hoist2 crate4 truck0 distributor1, unload hoist2 crate0 truck1 distributor1, drop hoist2 crate0 pallet3 distributor1]
+	 @@@@ Score: 0.90909094

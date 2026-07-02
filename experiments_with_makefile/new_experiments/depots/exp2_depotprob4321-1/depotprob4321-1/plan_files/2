@@ -1,0 +1,7 @@
+lift hoist2 crate9 pallet2 distributor1
+lift hoist1 crate6 crate5 distributor0
+load hoist1 crate6 truck0 distributor0
+drop hoist2 crate9 crate7 distributor1
+drive truck0 distributor0 distributor1
+unload hoist2 crate6 truck0 distributor1
+drop hoist2 crate6 pallet2 distributor1

@@ -1,0 +1,1 @@
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2# (and (at c2 l2)  (at c1 l11) )# [(and (at c2 l2)  (at c1 l11) )]# 4.0# 4.0# 6# 5# 2# 2# 4.0# 7.0# 88.0#

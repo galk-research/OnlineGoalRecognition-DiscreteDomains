@@ -1,0 +1,4 @@
+(ontable e),(clear a)
+(ontable c),(clear b)
+(on a e),(on d c)
+(on b d)

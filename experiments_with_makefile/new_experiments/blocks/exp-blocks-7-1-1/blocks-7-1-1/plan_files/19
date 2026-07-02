@@ -1,0 +1,4 @@
+unstack b e
+stack b a
+unstack e f
+stack e b

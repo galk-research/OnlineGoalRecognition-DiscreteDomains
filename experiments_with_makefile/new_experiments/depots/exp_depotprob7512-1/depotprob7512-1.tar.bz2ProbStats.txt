@@ -1,0 +1,9 @@
+(and (on crate1 crate3)  (on crate2 pallet0) )
+[drive truck0 depot0 distributor1, lift hoist0 crate0 pallet0 depot0, lift hoist2 crate2 crate1 distributor1, load hoist0 crate0 truck1 depot0, load hoist2 crate2 truck0 distributor1, lift hoist2 crate1 pallet2 distributor1, load hoist2 crate1 truck0 distributor1, drive truck0 distributor1 depot0, drive truck0 distributor1 depot0, unload hoist0 crate2 truck0 depot0, drive truck0 depot0 distributor0, drop hoist0 crate2 pallet0 depot0, unload hoist1 crate1 truck0 distributor0, drop hoist1 crate1 crate3 distributor0]
+(and (on crate0 pallet2) ),(and (on crate1 crate3) ),(and (on crate3 pallet1) ),(and (on crate2 pallet0) ),(and (on crate2 pallet0)  (on crate0 pallet2) ),(and (on crate1 crate3)  (on crate2 pallet0) ),
+0.29411766 0.30487806 0.33333334 0.34482756 0.34482756 0.35856572 0.37037036 0.35971224 0.20080322 0.19011407 0.18424357 0.17582686 0.171278 0.16688062 
+0.3529412 0.3292683 0.33333334 0.3103448 0.3103448 0.32270914 0.3333333 0.32374102 0.18072289 0.17110266 0.17963749 0.1704168 0.17786562 0.18485238 
+0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 
+0.3529412 0.36585367 0.33333334 0.34482756 0.34482756 0.31872508 0.2962963 0.31654677 0.17670684 0.18250951 0.17419393 0.17902371 0.171278 0.16431323 
+0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.22088353 0.22813688 0.22240831 0.22857492 0.2226614 0.2169448 
+0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.22088353 0.22813688 0.23951665 0.2461576 0.256917 0.267009 

@@ -1,0 +1,8 @@
+(and (on d b)  (on f h)  (on a e) )
+[unstack h a, put-down h, pick-up f, stack f h, unstack a b, stack a e, pick-up d, pick-up d, stack d b]
+(and (on g f)  (on b g) ),(and (on c d)  (on h a) ),(and (on f h)  (on a e) ),(and (on d b) ),(and (on d b)  (on f h)  (on a e) ),
+1.0 1.0 0.8333333 0.8333333 0.8333333 0.8333333 0.71428573 0.71428573 0.625 
+0.6666667 0.5 0.4 0.33333334 0.2857143 0.25 0.22222222 0.22222222 0.22222222 
+1.0 1.0 1.0 1.0 1.0 1.0 0.85714287 0.85714287 0.75 
+1.0 1.0 0.75 0.75 0.75 0.75 0.75 0.75 0.75 
+0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0 1.0 

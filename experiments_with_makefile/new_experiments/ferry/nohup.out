@@ -1,0 +1,809 @@
+Top dir: Now working on problems in  exp2_ferry-l14-c5-1/
+# cd exp2_ferry-l14-c5-1/ && make -f ../Makefile.subdir 
+Top dir: Now working on problems in  exp2_ferry-l14-c6-1/
+Top dir: Now working on problems in  exp2_ferry-l14-c7-1/
+# cd exp2_ferry-l14-c6-1/ && make -f ../Makefile.subdir 
+# cd exp2_ferry-l14-c7-1/ && make -f ../Makefile.subdir 
+Top dir: Now working on problems in  exp2_ferry-l14-c8-1/
+make -f ../Makefile.subdir -C exp2_ferry-l14-c5-1/  || true
+# cd exp2_ferry-l14-c8-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp2_ferry-l14-c6-1/  || true
+make -f ../Makefile.subdir -C exp2_ferry-l14-c7-1/  || true
+make -f ../Makefile.subdir -C exp2_ferry-l14-c8-1/  || true
+Top dir: Now working on problems in  exp2_ferry-l14-c9-1/
+# cd exp2_ferry-l14-c9-1/ && make -f ../Makefile.subdir 
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1'
+echo java path ../../../../
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1'
+echo java path ../../../../
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1'
+echo java path ../../../../
+java path ../../../../
+make -f ../Makefile.subdir -C exp2_ferry-l14-c9-1/  || true
+echo exp2_ferry-l14-c5-1;
+java path ../../../../
+echo exp2_ferry-l14-c6-1;
+java path ../../../../
+echo exp2_ferry-l14-c7-1;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1'
+echo java path ../../../../
+exp2_ferry-l14-c5-1
+exp2_ferry-l14-c6-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1 >>  makefile_log.txt;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1 >>  makefile_log.txt;
+exp2_ferry-l14-c7-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1 >>  makefile_log.txt;
+java path ../../../../
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.txt >> makefile_log.txt || true;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.txt >> makefile_log.txt || true;
+echo exp2_ferry-l14-c8-1;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2" >> makefile_log.txt || true;
+exp2_ferry-l14-c8-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.txt >> makefile_log.txt || true;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1'
+echo java path ../../../../
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> makefile_log.txt || ture;
+java path ../../../../
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.txt >> makefile_log.txt || true;
+echo exp2_ferry-l14-c9-1;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2" >> makefile_log.txt || true;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> run_log.txt || true;	
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> makefile_log.txt || ture;
+exp2_ferry-l14-c9-1
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2" >> makefile_log.txt || true;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1 >>  makefile_log.txt;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> run_log.txt || true;	
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> makefile_log.txt || ture;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.txt >> makefile_log.txt || true;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> run_log.txt || true;	
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2" >> makefile_log.txt || true;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> run_log.txt || true;	
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> makefile_log.txt || ture;
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1'
+Top dir: Now working on problems in  exp3_ferry-l14-c5-1/
+# cd exp3_ferry-l14-c5-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l14-c5-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l14-c5-1;
+exp3_ferry-l14-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1'
+Top dir: Now working on problems in  exp3_ferry-l14-c6-1/
+# cd exp3_ferry-l14-c6-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l14-c6-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l14-c6-1;
+exp3_ferry-l14-c6-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1'
+Top dir: Now working on problems in  exp3_ferry-l14-c7-1/
+# cd exp3_ferry-l14-c7-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l14-c7-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l14-c7-1;
+exp3_ferry-l14-c7-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1'
+Top dir: Now working on problems in  exp3_ferry-l14-c8-1/
+# cd exp3_ferry-l14-c8-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l14-c8-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l14-c8-1;
+exp3_ferry-l14-c8-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1'
+Top dir: Now working on problems in  exp3_ferry-l15-c5-1/
+# cd exp3_ferry-l15-c5-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l15-c5-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l15-c5-1;
+exp3_ferry-l15-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1'
+Top dir: Now working on problems in  exp3_ferry-l15-c9-1/
+# cd exp3_ferry-l15-c9-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l15-c9-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l15-c9-1;
+exp3_ferry-l15-c9-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: *** [makefile:38: run] Terminated
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1'
+Top dir: Now working on problems in  exp_ferry-l14-c5-1/
+# cd exp_ferry-l14-c5-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c5-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c5-1;
+exp_ferry-l14-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1'
+Top dir: Now working on problems in  exp_ferry-l14-c6-1/
+# cd exp_ferry-l14-c6-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c6-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c6-1;
+exp_ferry-l14-c6-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: *** wait: No child processes.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** wait: No child processes.  Stop.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1'
+Top dir: Now working on problems in  exp_ferry-l14-c7-1/
+# cd exp_ferry-l14-c7-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c7-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c7-1;
+exp_ferry-l14-c7-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1'
+Top dir: Now working on problems in  exp_ferry-l14-c8-1/
+# cd exp_ferry-l14-c8-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c8-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c8-1;
+exp_ferry-l14-c8-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1'
+Top dir: Now working on problems in  exp_ferry-l14-c9-1/
+# cd exp_ferry-l14-c9-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c9-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c9-1;
+exp_ferry-l14-c9-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1'
+Top dir: Now working on problems in  exp2_ferry-l14-c5-1/
+Top dir: Now working on problems in  exp2_ferry-l14-c6-1/
+# cd exp2_ferry-l14-c5-1/ && make -f ../Makefile.subdir 
+Top dir: Now working on problems in  exp2_ferry-l14-c7-1/
+# cd exp2_ferry-l14-c6-1/ && make -f ../Makefile.subdir 
+Top dir: Now working on problems in  exp2_ferry-l14-c8-1/
+# cd exp2_ferry-l14-c7-1/ && make -f ../Makefile.subdir 
+# cd exp2_ferry-l14-c8-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp2_ferry-l14-c5-1/  || true
+make -f ../Makefile.subdir -C exp2_ferry-l14-c6-1/  || true
+make -f ../Makefile.subdir -C exp2_ferry-l14-c7-1/  || true
+make -f ../Makefile.subdir -C exp2_ferry-l14-c8-1/  || true
+Top dir: Now working on problems in  exp2_ferry-l14-c9-1/
+# cd exp2_ferry-l14-c9-1/ && make -f ../Makefile.subdir 
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1'
+echo java path ../../../../
+make -f ../Makefile.subdir -C exp2_ferry-l14-c9-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1'
+echo java path ../../../../
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1'
+echo java path ../../../../
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1'
+echo java path ../../../../
+java path ../../../../
+echo exp2_ferry-l14-c5-1;
+java path ../../../../
+java path ../../../../
+echo exp2_ferry-l14-c7-1;
+java path ../../../../
+echo exp2_ferry-l14-c8-1;
+echo exp2_ferry-l14-c6-1;
+exp2_ferry-l14-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1 >>  makefile_log.txt;
+exp2_ferry-l14-c7-1
+exp2_ferry-l14-c6-1
+exp2_ferry-l14-c8-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1 >>  makefile_log.txt;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1 >>  makefile_log.txt;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1 >>  makefile_log.txt;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1'
+echo java path ../../../../
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.txt >> makefile_log.txt || true;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.txt >> makefile_log.txt || true;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.txt >> makefile_log.txt || true;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.txt >> makefile_log.txt || true;
+java path ../../../../
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2" >> makefile_log.txt || true;
+echo exp2_ferry-l14-c9-1;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> makefile_log.txt || ture;
+exp2_ferry-l14-c9-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1 >>  makefile_log.txt;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> makefile_log.txt || ture;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> makefile_log.txt || ture;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> run_log.txt || true;	
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.txt >> makefile_log.txt || true;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> run_log.txt || true;	
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> run_log.txt || true;	
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> run_log.txt || true;	
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1'
+Top dir: Now working on problems in  exp3_ferry-l14-c5-1/
+# cd exp3_ferry-l14-c5-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l14-c5-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l14-c5-1;
+exp3_ferry-l14-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1'
+Top dir: Now working on problems in  exp3_ferry-l14-c6-1/
+# cd exp3_ferry-l14-c6-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l14-c6-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l14-c6-1;
+exp3_ferry-l14-c6-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1'
+Top dir: Now working on problems in  exp3_ferry-l14-c7-1/
+# cd exp3_ferry-l14-c7-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l14-c7-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l14-c7-1;
+exp3_ferry-l14-c7-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1'
+Top dir: Now working on problems in  exp3_ferry-l14-c8-1/
+# cd exp3_ferry-l14-c8-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l14-c8-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l14-c8-1;
+exp3_ferry-l14-c8-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1'
+Top dir: Now working on problems in  exp3_ferry-l15-c5-1/
+# cd exp3_ferry-l15-c5-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l15-c5-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l15-c5-1;
+exp3_ferry-l15-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1'
+Top dir: Now working on problems in  exp3_ferry-l15-c9-1/
+# cd exp3_ferry-l15-c9-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l15-c9-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l15-c9-1;
+exp3_ferry-l15-c9-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1'
+Top dir: Now working on problems in  exp_ferry-l14-c5-1/
+# cd exp_ferry-l14-c5-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c5-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c5-1;
+exp_ferry-l14-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1'
+Top dir: Now working on problems in  exp_ferry-l14-c6-1/
+# cd exp_ferry-l14-c6-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c6-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c6-1;
+exp_ferry-l14-c6-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1'
+Top dir: Now working on problems in  exp_ferry-l14-c7-1/
+# cd exp_ferry-l14-c7-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c7-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c7-1;
+exp_ferry-l14-c7-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1'
+Top dir: Now working on problems in  exp_ferry-l14-c8-1/
+# cd exp_ferry-l14-c8-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c8-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c8-1;
+exp_ferry-l14-c8-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1'
+Top dir: Now working on problems in  exp_ferry-l14-c9-1/
+# cd exp_ferry-l14-c9-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c9-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c9-1;
+exp_ferry-l14-c9-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1'
+make[2]: *** [makefile:38: run] Terminated
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1'
+Top dir: Now working on problems in  exp2_ferry-l14-c5-1/
+# cd exp2_ferry-l14-c5-1/ && make -f ../Makefile.subdir 
+Top dir: Now working on problems in  exp2_ferry-l14-c6-1/
+Top dir: Now working on problems in  exp2_ferry-l14-c7-1/
+# cd exp2_ferry-l14-c6-1/ && make -f ../Makefile.subdir 
+# cd exp2_ferry-l14-c7-1/ && make -f ../Makefile.subdir 
+Top dir: Now working on problems in  exp2_ferry-l14-c8-1/
+make -f ../Makefile.subdir -C exp2_ferry-l14-c5-1/  || true
+# cd exp2_ferry-l14-c8-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp2_ferry-l14-c6-1/  || true
+make -f ../Makefile.subdir -C exp2_ferry-l14-c7-1/  || true
+make -f ../Makefile.subdir -C exp2_ferry-l14-c8-1/  || true
+Top dir: Now working on problems in  exp2_ferry-l14-c9-1/
+# cd exp2_ferry-l14-c9-1/ && make -f ../Makefile.subdir 
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1'
+echo java path ../../../../
+Top dir: Now working on problems in  exp3_ferry-l14-c5-1/
+Top dir: Now working on problems in  exp3_ferry-l14-c6-1/
+# cd exp3_ferry-l14-c5-1/ && make -f ../Makefile.subdir 
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1'
+echo java path ../../../../
+java path ../../../../
+# cd exp3_ferry-l14-c6-1/ && make -f ../Makefile.subdir 
+echo exp2_ferry-l14-c5-1;
+Top dir: Now working on problems in  exp3_ferry-l14-c7-1/
+make -f ../Makefile.subdir -C exp2_ferry-l14-c9-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1'
+echo java path ../../../../
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1'
+echo java path ../../../../
+# cd exp3_ferry-l14-c7-1/ && make -f ../Makefile.subdir 
+exp2_ferry-l14-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1 >>  makefile_log.txt;
+java path ../../../../
+make -f ../Makefile.subdir -C exp3_ferry-l14-c5-1/  || true
+echo exp2_ferry-l14-c6-1;
+make -f ../Makefile.subdir -C exp3_ferry-l14-c6-1/  || true
+java path ../../../../
+java path ../../../../
+echo exp2_ferry-l14-c7-1;
+echo exp2_ferry-l14-c8-1;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.txt >> makefile_log.txt || true;
+make -f ../Makefile.subdir -C exp3_ferry-l14-c7-1/  || true
+exp2_ferry-l14-c6-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1 >>  makefile_log.txt;
+exp2_ferry-l14-c7-1
+exp2_ferry-l14-c8-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1 >>  makefile_log.txt;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1 >>  makefile_log.txt;
+Top dir: Now working on problems in  exp3_ferry-l14-c8-1/
+# cd exp3_ferry-l14-c8-1/ && make -f ../Makefile.subdir 
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2" >> makefile_log.txt || true;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.txt >> makefile_log.txt || true;
+Top dir: Now working on problems in  exp3_ferry-l15-c5-1/
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1'
+echo java path ../../../../
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.txt >> makefile_log.txt || true;
+# cd exp3_ferry-l15-c5-1/ && make -f ../Makefile.subdir 
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> makefile_log.txt || ture;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1'
+echo java path ../../../../
+make -f ../Makefile.subdir -C exp3_ferry-l14-c8-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1'
+echo java path ../../../../
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2" >> makefile_log.txt || true;
+java path ../../../../
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2" >> makefile_log.txt || true;
+echo exp2_ferry-l14-c9-1;
+make -f ../Makefile.subdir -C exp3_ferry-l15-c5-1/  || true
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> run_log.txt || true;	
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l14-c5-1;
+java path ../../../../
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> makefile_log.txt || ture;
+echo exp3_ferry-l14-c6-1;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> makefile_log.txt || ture;
+exp2_ferry-l14-c9-1
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> makefile_log.txt || ture;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1 >>  makefile_log.txt;
+java path ../../../../
+exp3_ferry-l14-c5-1
+echo exp3_ferry-l14-c7-1;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1 >>  makefile_log.txt;
+exp3_ferry-l14-c6-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1 >>  makefile_log.txt;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> run_log.txt || true;	
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> run_log.txt || true;	
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> run_log.txt || true;	
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.txt >> makefile_log.txt || true;
+exp3_ferry-l14-c7-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.txt >> makefile_log.txt || true;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1'
+echo java path ../../../../
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.txt >> makefile_log.txt || true;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1'
+echo java path ../../../../
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2" >> makefile_log.txt || true;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.txt >> makefile_log.txt || true;
+java path ../../../../
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2" >> makefile_log.txt || true;
+echo exp3_ferry-l14-c8-1;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2" >> makefile_log.txt || true;
+java path ../../../../
+echo exp3_ferry-l15-c5-1;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> makefile_log.txt || ture;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2" >> makefile_log.txt || true;
+exp3_ferry-l14-c8-1
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> makefile_log.txt || ture;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1 >>  makefile_log.txt;
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> makefile_log.txt || ture;
+exp3_ferry-l15-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1 >>  makefile_log.txt;
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> run_log.txt || true;	
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> makefile_log.txt || ture;
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> run_log.txt || true;	
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> run_log.txt || true;	
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.txt >> makefile_log.txt || true;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.txt >> makefile_log.txt || true;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> run_log.txt || true;	
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar Block-World" >> makefile_log.txt || ture;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1/ferry-l15-c5-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c6-1'
+Top dir: Now working on problems in  exp3_ferry-l15-c9-1/
+# cd exp3_ferry-l15-c9-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp3_ferry-l15-c9-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1'
+echo java path ../../../../
+java path ../../../../
+echo exp3_ferry-l15-c9-1;
+exp3_ferry-l15-c9-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1/ferry-l15-c9-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c9-1'
+Top dir: Now working on problems in  exp_ferry-l14-c5-1/
+# cd exp_ferry-l14-c5-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c5-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c5-1;
+exp_ferry-l14-c5-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1/ferry-l14-c5-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c8-1'
+Top dir: Now working on problems in  exp_ferry-l14-c6-1/
+# cd exp_ferry-l14-c6-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c6-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c6-1;
+exp_ferry-l14-c6-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1/ferry-l14-c6-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c5-1'
+Top dir: Now working on problems in  exp_ferry-l14-c7-1/
+# cd exp_ferry-l14-c7-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c7-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c7-1;
+exp_ferry-l14-c7-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1/ferry-l14-c7-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c6-1'
+Top dir: Now working on problems in  exp_ferry-l14-c8-1/
+# cd exp_ferry-l14-c8-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c8-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c8-1;
+exp_ferry-l14-c8-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1/ferry-l14-c8-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c7-1'
+Top dir: Now working on problems in  exp_ferry-l14-c9-1/
+# cd exp_ferry-l14-c9-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp_ferry-l14-c9-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+echo java path ../../../../
+java path ../../../../
+echo exp_ferry-l14-c9-1;
+exp_ferry-l14-c9-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 5m make run -C ../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1/ferry-l14-c9-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c8-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp_ferry-l14-c9-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c9-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c7-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c5-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c5-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c8-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l15-c5-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp2_ferry-l14-c7-1'
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local24>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:190)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:62)
+	at experiments.MultipleGoals.main(MultipleGoals.java:47)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/ferry/exp3_ferry-l14-c6-1'

@@ -1,0 +1,1 @@
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/depots/exp_depotprob7512-1/depotprob7512-1.tar.bz2# (and (on crate1 crate3)  (on crate2 pallet0) )# [(and (on crate1 crate3)  (on crate2 pallet0) )]# 4.0# 5.0# 6# 4# 2# 2# 8.0# 13.0# 136.0#

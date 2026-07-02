@@ -1,0 +1,8 @@
+unstack e b
+stack e g
+pick-up b
+stack b f
+unstack e g
+stack e b
+pick-up a
+stack a e

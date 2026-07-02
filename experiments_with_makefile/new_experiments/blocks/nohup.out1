@@ -1,0 +1,394 @@
+Top dir: Now working on problems in  exp-blocks-5-0-1/
+Top dir: Now working on problems in  exp-blocks-5-1-1/
+# cd exp-blocks-5-0-1/ && make -f ../Makefile.subdir 
+Top dir: Now working on problems in  exp-blocks-5-2-1/
+# cd exp-blocks-5-1-1/ && make -f ../Makefile.subdir 
+Top dir: Now working on problems in  exp-blocks-6-0-1/
+# cd exp-blocks-5-2-1/ && make -f ../Makefile.subdir 
+# cd exp-blocks-6-0-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp-blocks-5-0-1/  || true
+make -f ../Makefile.subdir -C exp-blocks-5-1-1/  || true
+make -f ../Makefile.subdir -C exp-blocks-5-2-1/  || true
+Top dir: Now working on problems in  exp-blocks-6-1-1/
+make -f ../Makefile.subdir -C exp-blocks-6-0-1/  || true
+# cd exp-blocks-6-1-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C exp-blocks-6-1-1/  || true
+Top dir: Now working on problems in  exp-blocks-6-2-1/
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1'
+echo java path ../../../../../
+Top dir: Now working on problems in  exp-blocks-7-0-1/
+# cd exp-blocks-6-2-1/ && make -f ../Makefile.subdir 
+# cd exp-blocks-7-0-1/ && make -f ../Makefile.subdir 
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1'
+echo java path ../../../../../
+Top dir: Now working on problems in  exp-blocks-7-1-1/
+java path ../../../../../
+echo exp-blocks-5-0-1;
+# cd exp-blocks-7-1-1/ && make -f ../Makefile.subdir 
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1'
+echo java path ../../../../../
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1'
+echo java path ../../../../../
+make -f ../Makefile.subdir -C exp-blocks-6-2-1/  || true
+Top dir: Now working on problems in  exp-blocks-7-2-1/
+make -f ../Makefile.subdir -C exp-blocks-7-0-1/  || true
+java path ../../../../../
+# cd exp-blocks-7-2-1/ && make -f ../Makefile.subdir 
+exp-blocks-5-0-1
+echo exp-blocks-5-1-1;
+java path ../../../../../
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1 >>  makefile_log.txt;
+make -f ../Makefile.subdir -C exp-blocks-7-1-1/  || true
+echo exp-blocks-5-2-1;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1'
+echo java path ../../../../../
+java path ../../../../../
+echo exp-blocks-6-0-1;
+java path ../../../../../
+echo exp-blocks-6-1-1;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1.txt >> makefile_log.txt || true;
+exp-blocks-5-2-1
+exp-blocks-5-1-1
+make -f ../Makefile.subdir -C exp-blocks-7-2-1/  || true
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1 >>  makefile_log.txt;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1 >>  makefile_log.txt;
+Top dir: Now working on problems in  exp-blocks-8-0-1/
+exp-blocks-6-0-1
+# cd exp-blocks-8-0-1/ && make -f ../Makefile.subdir 
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1 >>  makefile_log.txt;
+Top dir: Now working on problems in  exp-blocks-8-1-1/
+exp-blocks-6-1-1
+# cd exp-blocks-8-1-1/ && make -f ../Makefile.subdir 
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1.tar.bz2" >> makefile_log.txt || true;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1 >>  makefile_log.txt;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1'
+echo java path ../../../../../
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1.txt >> makefile_log.txt || true;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1'
+echo java path ../../../../../
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.txt >> makefile_log.txt || true;
+Top dir: Now working on problems in  exp-blocks-8-2-1/
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1.txt >> makefile_log.txt || true;
+make -f ../Makefile.subdir -C exp-blocks-8-0-1/  || true
+# cd exp-blocks-8-2-1/ && make -f ../Makefile.subdir 
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1.tar Block-World" >> makefile_log.txt || ture;
+java path ../../../../../
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1'
+echo java path ../../../../../
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1.tar.bz2" >> makefile_log.txt || true;
+echo exp-blocks-6-2-1;
+java path ../../../../../
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1.tar.bz2" >> makefile_log.txt || true;
+make -f ../Makefile.subdir -C exp-blocks-8-1-1/  || true
+echo exp-blocks-7-0-1;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1.tar.bz2" >> makefile_log.txt || true;
+make -f ../Makefile.subdir -C exp-blocks-8-2-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1'
+echo java path ../../../../../
+java path ../../../../../
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1/blocks-5-0-1.tar Block-World" >> run_log.txt || true;	
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1.tar Block-World" >> makefile_log.txt || ture;
+exp-blocks-6-2-1
+Top dir: Now working on problems in  experiment_files-blocks-5-0-1/
+echo exp-blocks-7-1-1;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1 >>  makefile_log.txt;
+exp-blocks-7-0-1
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1.tar Block-World" >> makefile_log.txt || ture;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World" >> makefile_log.txt || ture;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1.tar Block-World" >> makefile_log.txt || ture;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1 >>  makefile_log.txt;
+# cd experiment_files-blocks-5-0-1/ && make -f ../Makefile.subdir 
+java path ../../../../../
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1'
+echo java path ../../../../../
+echo exp-blocks-7-2-1;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1/blocks-5-2-1.tar Block-World" >> run_log.txt || true;	
+exp-blocks-7-1-1
+Top dir: Now working on problems in  experiment_files-blocks-5-1-1/
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1 >>  makefile_log.txt;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1/blocks-6-1-1.tar Block-World" >> run_log.txt || true;	
+exp-blocks-7-2-1
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1.txt >> makefile_log.txt || true;
+# cd experiment_files-blocks-5-1-1/ && make -f ../Makefile.subdir 
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1.txt >> makefile_log.txt || true;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1 >>  makefile_log.txt;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1/blocks-5-1-1.tar Block-World" >> run_log.txt || true;	
+java path ../../../../../
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1/blocks-6-0-1.tar Block-World" >> run_log.txt || true;	
+make -f ../Makefile.subdir -C experiment_files-blocks-5-0-1/  || true
+echo exp-blocks-8-0-1;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1'
+echo java path ../../../../../
+Top dir: Now working on problems in  experiment_files-blocks-5-2-1/
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1.tar.bz2" >> makefile_log.txt || true;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1.txt >> makefile_log.txt || true;
+# cd experiment_files-blocks-5-2-1/ && make -f ../Makefile.subdir 
+exp-blocks-8-0-1
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1'
+echo java path ../../../../../
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1 >>  makefile_log.txt;
+java path ../../../../../
+make -f ../Makefile.subdir -C experiment_files-blocks-5-1-1/  || true
+Top dir: Now working on problems in  experiment_files-blocks-6-0-1/
+echo exp-blocks-8-2-1;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1.tar Block-World" >> makefile_log.txt || ture;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1.tar Block-World" >> makefile_log.txt || ture;
+# cd experiment_files-blocks-6-0-1/ && make -f ../Makefile.subdir 
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1.tar.bz2" >> makefile_log.txt || true;
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java path ../../../../../
+make -f ../Makefile.subdir -C experiment_files-blocks-5-2-1/  || true
+echo exp-blocks-8-1-1;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1.txt >> makefile_log.txt || true;
+exp-blocks-8-2-1
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1.tar Block-World" >> makefile_log.txt || ture;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1 >>  makefile_log.txt;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1/blocks-7-0-1.tar Block-World" >> run_log.txt || true;	
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1/blocks-6-2-1.tar Block-World" >> run_log.txt || true;	
+make -f ../Makefile.subdir -C experiment_files-blocks-6-0-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1'
+echo java path ../../../../../
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1.tar Block-World" >> makefile_log.txt || ture;
+exp-blocks-8-1-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1 >>  makefile_log.txt;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1.tar.bz2" >> makefile_log.txt || true;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1/blocks-7-1-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java path ../../../../../
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1.txt >> makefile_log.txt || true;
+echo experiment_files-blocks-5-0-1;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1/blocks-7-2-1.tar Block-World" >> run_log.txt || true;	
+experiment_files-blocks-5-0-1
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1'
+echo java path ../../../../../
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1 >>  makefile_log.txt;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1.tar.bz2" >> makefile_log.txt || true;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1'
+echo java path ../../../../../
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1/blocks-8-0-1.tar Block-World" >> run_log.txt || true;	
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1.tar.bz2" >> makefile_log.txt || true;
+java path ../../../../../
+echo experiment_files-blocks-5-1-1;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1.txt >> makefile_log.txt || true;
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1'
+echo java path ../../../../../
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1.tar Block-World" >> makefile_log.txt || ture;
+java path ../../../../../
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+echo experiment_files-blocks-5-2-1;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1.tar Block-World" >> makefile_log.txt || ture;
+experiment_files-blocks-5-1-1
+java path ../../../../../
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1 >>  makefile_log.txt;
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1.tar.bz2" >> makefile_log.txt || true;
+echo experiment_files-blocks-6-0-1;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1/blocks-8-2-1.tar Block-World" >> run_log.txt || true;	
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1/blocks-8-1-1.tar Block-World" >> run_log.txt || true;	
+experiment_files-blocks-5-2-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1 >>  makefile_log.txt;
+experiment_files-blocks-6-0-1
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1.tar Block-World" >> makefile_log.txt || ture;
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1.txt >> makefile_log.txt || true;
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1.txt >> makefile_log.txt || true;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1/blocks-5-0-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1.tar Block-World" >> makefile_log.txt || ture;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1.tar Block-World" >> makefile_log.txt || ture;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1.tar Block-World" >> makefile_log.txt || ture;
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1/blocks-5-1-1.tar Block-World" >> run_log.txt || true;	
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1/blocks-5-2-1.tar Block-World" >> run_log.txt || true;	
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1/blocks-6-0-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-1-1'
+Top dir: Now working on problems in  experiment_files-blocks-6-1-1/
+# cd experiment_files-blocks-6-1-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C experiment_files-blocks-6-1-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1'
+echo java path ../../../../../
+java path ../../../../../
+echo experiment_files-blocks-6-1-1;
+experiment_files-blocks-6-1-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1 >>  makefile_log.txt;
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-0-1'
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1.tar.bz2" >> makefile_log.txt || true;
+Top dir: Now working on problems in  experiment_files-blocks-6-2-1/
+# cd experiment_files-blocks-6-2-1/ && make -f ../Makefile.subdir 
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1.tar Block-World" >> makefile_log.txt || ture;
+make -f ../Makefile.subdir -C experiment_files-blocks-6-2-1/  || true
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1/blocks-6-1-1.tar Block-World" >> run_log.txt || true;	
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1'
+echo java path ../../../../../
+java path ../../../../../
+echo experiment_files-blocks-6-2-1;
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+experiment_files-blocks-6-2-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1/blocks-6-2-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-0-1'
+Top dir: Now working on problems in  experiment_files-blocks-7-0-1/
+# cd experiment_files-blocks-7-0-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C experiment_files-blocks-7-0-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1'
+echo java path ../../../../../
+java path ../../../../../
+echo experiment_files-blocks-7-0-1;
+experiment_files-blocks-7-0-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1/blocks-7-0-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-1-1'
+Top dir: Now working on problems in  experiment_files-blocks-7-1-1/
+# cd experiment_files-blocks-7-1-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C experiment_files-blocks-7-1-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1'
+echo java path ../../../../../
+java path ../../../../../
+echo experiment_files-blocks-7-1-1;
+experiment_files-blocks-7-1-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1/blocks-7-1-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-2-1'
+Top dir: Now working on problems in  experiment_files-blocks-7-2-1/
+# cd experiment_files-blocks-7-2-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C experiment_files-blocks-7-2-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1'
+echo java path ../../../../../
+java path ../../../../../
+echo experiment_files-blocks-7-2-1;
+experiment_files-blocks-7-2-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1/blocks-7-2-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-2-1'
+Top dir: Now working on problems in  experiment_files-blocks-8-0-1/
+# cd experiment_files-blocks-8-0-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C experiment_files-blocks-8-0-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1'
+echo java path ../../../../../
+java path ../../../../../
+echo experiment_files-blocks-8-0-1;
+experiment_files-blocks-8-0-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1/blocks-8-0-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-5-1-1'
+Top dir: Now working on problems in  experiment_files-blocks-8-1-1/
+# cd experiment_files-blocks-8-1-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C experiment_files-blocks-8-1-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1'
+echo java path ../../../../../
+java path ../../../../../
+echo experiment_files-blocks-8-1-1;
+experiment_files-blocks-8-1-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1/blocks-8-1-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+java.lang.NullPointerException: Cannot invoke "javaff.data.Plan.getPlanLength()" because "<local23>" is null
+	at recognizer.MultiGoalRecognizer.recognizeOnline(MultiGoalRecognizer.java:181)
+	at recognizer.MultiGoalRecognizer.call(MultiGoalRecognizer.java:56)
+	at experiments.MultipleGoals.main(MultipleGoals.java:52)
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-2-1'
+Top dir: Now working on problems in  experiment_files-blocks-8-2-1/
+# cd experiment_files-blocks-8-2-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C experiment_files-blocks-8-2-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1'
+echo java path ../../../../../
+java path ../../../../../
+echo experiment_files-blocks-8-2-1;
+experiment_files-blocks-8-2-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1/blocks-8-2-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-6-0-1'
+Top dir: Now working on problems in  scores/
+# cd scores/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C scores/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/scores'
+make[1]: 'all' is up to date.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/scores'
+Top dir: Now working on problems in  try-experiment_blocks-8-0-1/
+# cd try-experiment_blocks-8-0-1/ && make -f ../Makefile.subdir 
+make -f ../Makefile.subdir -C try-experiment_blocks-8-0-1/  || true
+make[1]: Entering directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1'
+echo java path ../../../../../
+java path ../../../../../
+echo try-experiment_blocks-8-0-1;
+try-experiment_blocks-8-0-1
+#echo 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1 >>  makefile_log.txt;
+#echo make -C ../../ /home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1.txt >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1.tar.bz2" >> makefile_log.txt || true;
+#make print -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1.tar Block-World" >> makefile_log.txt || ture;
+/usr/bin/time -p -o $@."time" timeout 2h make run -C ../../../../../ ARGS="/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1.tar.bz2 	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1  	/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1/blocks-8-0-1.tar Block-World" >> run_log.txt || true;	
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-2-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-2-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-2-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-1-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-5-1-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-0-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-6-0-1'
+make[2]: *** [makefile:38: run] Terminated
+make[2]: *** [makefile:38: run] Terminated
+make[2]: *** [makefile:38: run] Terminated
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-0-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-1-1'
+make[2]: *** [makefile:38: run] Terminated
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-7-2-1'
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-0-1'
+make[2]: *** [makefile:38: run] Terminated
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/exp-blocks-8-1-1'
+make[2]: *** [makefile:38: run] Terminated
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-1-1'
+make[2]: *** [makefile:38: run] Terminated
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-7-2-1'
+make[2]: *** [makefile:38: run] Terminated
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/experiment_files-blocks-8-0-1'
+make[2]: *** [makefile:38: run] Terminated
+make[1]: Leaving directory '/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks/try-experiment_blocks-8-0-1'

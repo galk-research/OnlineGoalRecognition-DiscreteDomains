@@ -1,0 +1,1 @@
+/home/yifat/OnlineGoalRecognition-DiscreteDomains/experiments_with_makefile/new_experiments/blocks/exp-blocks-6-0-1/blocks-6-0-1.tar.bz2# (and (on b a)  (ontable d)  (on f d)  (on c b)  (on e f)  (on a e)  (clear c) )# [(and (on b a)  (on c b)  (on a e) )]# 0.0# 0.0# 6# 4# 7# 2# 9.0# 12.0# 120.0#

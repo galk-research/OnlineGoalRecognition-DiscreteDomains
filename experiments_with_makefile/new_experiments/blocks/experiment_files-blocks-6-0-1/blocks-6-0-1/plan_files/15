@@ -1,0 +1,5 @@
+stack e b
+unstack d a
+stack d f
+unstack a c
+stack a e
