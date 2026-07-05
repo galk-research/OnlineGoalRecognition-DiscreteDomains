@@ -16,6 +16,7 @@ import java.util.Set;
 import statistics.StatisticsForGraphs;
 import file_managers.FileManager;
 import javaff.data.Action;
+import javaff.data.Fact;
 import javaff.data.GroundFact;
 import javaff.data.Plan;
 import javaff.planning.STRIPSState;
@@ -76,15 +77,76 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		return lstWorldStates;
 	}
 	
-	// Why java does not have this a a built in function???
 	private int returnNumberOfAtomicGoals(GroundFact goal) {
-		String str_goal = goal.toString().replace(" ", "");
-		String str_goal_without_comas = str_goal.replace(")(", "!");
-		// Why??
-		return str_goal.length() - str_goal_without_comas.length() + 1;
+		// If the real goal is considered by the algorithm, it is in the candidates goal list, and we can just check.  
+		for (ComplexGoal goalInList: this.cmplxGoals) {
+			if(goal.equals(goalInList.getGoal())) {
+				return goalInList.getAtomicGoalsNum();
+			}
+		}
+		
+		ComplexGoal result = getGoalsThatMakesTheCombination(goal);
+		if(result != null) {
+			return result.getAtomicGoalsNum();
+		}
+		
+		return -1;
+		
 	}
 	
-	private void SaveStatsToFile(GroundFact realGoal, Map<GroundFact, List<Float>> goalsToStats, String statsName, List<Action> observationAnalyzed) {
+	
+	private ComplexGoal getGoalsThatMakesTheCombination(GroundFact goal) {
+		// The real goal is not considered so we have to check what combination of the atom goals creates the real goal. 
+		// Go through all the atomic goals:
+		List<GroundFact> goalsTheRealGoalMayBeConbinationOf = new ArrayList<GroundFact>();
+
+		// Get all the atom goals the real goal contains all of its facts.
+		Set<Fact> realGoalFacts = goal.getFacts();
+		for (GroundFact goalInList: this.candidateGoals) {
+			Set<Fact> goalInListFacts = goalInList.getFacts();
+			if(realGoalFacts.containsAll(goalInListFacts)) {
+				goalsTheRealGoalMayBeConbinationOf.add(goalInList);
+			}
+		}
+		
+		for (GroundFact atomGoal :goalsTheRealGoalMayBeConbinationOf) {
+			ComplexGoal resultConbinedGoal = getGoalsThatMakesTheCombinationRecursive(goal, this.goalToComplexGoal.get(atomGoal), 
+																						goalsTheRealGoalMayBeConbinationOf);
+			if (resultConbinedGoal != null) {
+				return resultConbinedGoal;
+			}
+		}
+		
+		return null;
+	}
+	
+	private ComplexGoal getGoalsThatMakesTheCombinationRecursive(GroundFact goal, ComplexGoal combinedGoal, List<GroundFact> atomGoalsList ) {
+		// If this is the combination we were looking for.
+		if (goal.equals(combinedGoal.getGoal())) {
+			return combinedGoal;
+		// If the combined goal is made of all the goals in the list, and still it does not make our true goal.
+		} else if (combinedGoal.getAtomicGoalsNum() >= atomGoalsList .size()) {
+			return null;
+		}
+		
+		for (GroundFact atomGoal :atomGoalsList) {
+			if (!combinedGoal.getGoal().getFacts().containsAll(atomGoal.getFacts())) {
+				List<Integer> indexesList = new LinkedList<Integer>(combinedGoal.getAtomicGoalIndexes());
+				indexesList.addAll(this.goalToComplexGoal.get(atomGoal).getAtomicGoalIndexes());
+				ComplexGoal newCombinedGoal = new ComplexGoal(this.candidateGoals, indexesList);
+				
+				ComplexGoal resultConbinedGoal = this.getGoalsThatMakesTheCombinationRecursive(goal, newCombinedGoal, atomGoalsList);
+				if (resultConbinedGoal != null) {
+					return resultConbinedGoal;
+				}
+			}
+		}
+		
+		return null;
+	}
+	
+	
+ 	private void SaveStatsToFile(GroundFact realGoal, Map<GroundFact, List<Float>> goalsToStats, String statsName, List<Action> observationAnalyzed) {
 		try {
 			String fileName = this.getRecognitionFileName() + statsName + ".txt";
 			File myObj = new File(fileName);
@@ -320,7 +382,7 @@ public class MultiGoalRecognizer extends GoalRecognition {
 				writer.write(this.cmplxGoals.size() + "# "); // Total number of considered goals.
 				writer.write(this.candidateGoals.size()+"# "); // Number of atomic goals.
 				writer.write(this.returnNumberOfAtomicGoals(this.realGoal) + "# "); // Number of atomic goals in real goal.
-				writer.write(maxGoalsCombinations + "# "); // Number of atomic goals in (truely / flasy )Recogniszed goal
+				writer.write(this.getBiggestCombinationSize(this.cmplxGoals) + "# "); // Number of atomic goals in (truely / flasy )Recogniszed goal
 				writer.write(lastCandidatesGoalsExpantionAtObs + "# "); // lastCandidatesGoalsExpantionAtObs 
 				writer.write(Float.toString(observationCounter) + "# "); 
 				writer.write(Float.toString(numberOfCallsPlanner) + "#");
@@ -334,6 +396,18 @@ public class MultiGoalRecognizer extends GoalRecognition {
 		
 		
 		return new GoalRecognitionResult(topFirstRankedPercent, convergencePercent, this.candidateGoals.size(), this.observations.size(), this.getAverageOfFactLandmarks(), numberOfCallsPlanner);
+	}
+	
+	private int getBiggestCombinationSize(List<ComplexGoal> lstGoals) {
+		int biggestCombination = 0;
+		for (ComplexGoal goal: lstGoals) {
+			int combinatoinSize = goal.getAtomicGoalsNum();
+			if (combinatoinSize > biggestCombination) {
+				biggestCombination = combinatoinSize;
+			}
+		}
+		return biggestCombination;
+			
 	}
 	
 	private void AddNewGoals(List<ComplexGoal> newcmplxGoals, StatisticsForGraphs graphStatistics, Map<GroundFact, List<Action>> mObservationsGoals) {
