@@ -381,11 +381,15 @@ public class MultiGoalRecognizer extends GoalRecognition {
 				writer.write(Float.toString(topFrequency) + "# "); // Real goal gets the best score, amoung others.
 				writer.write(this.cmplxGoals.size() + "# "); // Total number of considered goals.
 				writer.write(this.candidateGoals.size()+"# "); // Number of atomic goals.
-				writer.write(this.returnNumberOfAtomicGoals(this.realGoal) + "# "); // Number of atomic goals in real goal.
-				writer.write(this.getBiggestCombinationSize(this.cmplxGoals) + "# "); // Number of atomic goals in (truely / flasy )Recogniszed goal
+				int numAtomicInGoal = this.returnNumberOfAtomicGoals(this.realGoal);
+				writer.write(numAtomicInGoal+ "# "); // Number of atomic goals in real goal.
+				int biggestCombinationSize = this.getBiggestCombinationSize(this.cmplxGoals);
+				writer.write(biggestCombinationSize + "# "); // Number of atomic goals in (truely / flasy )Recogniszed goal
 				writer.write(lastCandidatesGoalsExpantionAtObs + "# "); // lastCandidatesGoalsExpantionAtObs 
 				writer.write(Float.toString(observationCounter) + "# "); 
 				writer.write(Float.toString(numberOfCallsPlanner) + "#");
+				writer.write(Boolean.toString(topFirstFrequency != topFrequency) + "#"); // if the goal was recognized among other goals first.
+				writer.write(Boolean.toString(biggestCombinationSize < numAtomicInGoal) + "#"); // if the recognized goal is a simpler explanation of the observations. 
 				writer.write("\n");
 
 			}
